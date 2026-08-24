@@ -1,0 +1,33 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Spray liquid from a spray bottle or hose",
+            "description": "Spray liquid from a spray bottle or hose onto a surface or object",
+            "variables": [
+                "liquid_to_spray",
+                "spray_tool",
+                "spray_target"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position on the spray_target where the liquid_to_spray will be sprayed",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the spray_tool toward the spray_target",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the trigger of the spray_tool to spray the liquid_to_spray",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Spray water on a wall with a spray bottle"
+            ]
+        }
+    ]
+}

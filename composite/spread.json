@@ -1,0 +1,103 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Apply and spread mixture to a surface",
+            "description": "Use a tool to apply and spread mixture on a surface.",
+            "variables": [
+                "mixture",
+                "tool",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Take a scoop of mixture on the tool",
+                    "category": "Scoop material with a tool",
+                    "repeated": false
+                },
+                {
+                    "activity": "Determine the position on the surface where the mixture will be applied",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the tool at the application location on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Swing the tool to apply the mixture to the surface",
+                    "category": "Swing arm while holding an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Rub the tool on the surface to spread the mixture",
+                    "category": "Spread object on surface",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Apply and spread mortar on a wall with a trowel",
+                "Pack mortar into a brick joint with a flat pointing iron"
+            ]
+        },
+        {
+            "name": "Composite - Apply a liquid to a surface with a brush or roller",
+            "description": "Use a brush or roller to apply a liquid to a surface.",
+            "variables": [
+                "liquid_to_apply",
+                "application_tool",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position on the surface where the liquid_to_apply will be applied",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the application_tool near the location on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Stroke the application_tool to apply the liquid_to_apply to the surface",
+                    "category": "Stroke tool on surface",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Apply paint to a wall with a brush"
+            ]
+        },
+        {
+            "name": "Composite - Apply caulk or sealant from a gun or tube",
+            "description": "Apply caulk or sealant from a gun or tube to a surface or joint.",
+            "variables": [
+                "paste_to_apply",
+                "application_tool",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the application_tool on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the plunger of the application_tool to dispense the paste_to_apply",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Move the application_tool along the surface to apply the paste_to_apply",
+                    "category": "Move tool along a linear path",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Apply caulk to a joint between two surfaces with a caulking gun",
+                "Apply sealant to a surface with a tube of sealant"
+            ]
+        }
+    ]
+}

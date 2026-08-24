@@ -1,0 +1,90 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Take off excess material with a tool",
+            "description": "Use a tool to take off excess material from a surface.",
+            "variables": [
+                "material",
+                "tool",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position on the surface where the excess material will be taken off",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the tool near the location on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Slide the tool to take off the excess material from the surface",
+                    "category": "Stroke tool on surface",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Scrape damaged mortar from a brick joint with a trowel",
+                "Remove excess mortar from a brick joint with a flat pointing iron"
+            ]
+        },
+        {
+            "name": "Composite - Brush on a surface to remove dust or debris",
+            "description": "Use a brush to remove dust, debris, or excess material from a surface.",
+            "variables": [
+                "surface",
+                "brush"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position on the surface where the dust, debris and excess material will be brushed off",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the brush near the location on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Stroke the brush to remove dust, debris and excess material from the surface",
+                    "category": "Stroke tool on surface",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Brush loose mortar and debris from a brick wall"
+            ]
+        },
+        {
+            "name": "Composite - Rub an abrasive back and forth on a surface",
+            "description": "Use an abrasive tool to rub a surface back and forth to remove material",
+            "variables": [
+                "surface",
+                "abrasive_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position on the surface where the abrasive_tool will be rubbed",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the abrasive_tool near the location on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Rub the abrasive_tool back and forth on the surface to remove material",
+                    "category": "Stroke tool on surface",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Rub a pipe with sandpaper to remove rust and corrosion"
+            ]
+        }
+    ]
+}

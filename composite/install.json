@@ -1,0 +1,174 @@
+{
+  "skills": [
+    {
+      "name": "Composite - Fish cable through a concealed cavity",
+      "description": "Route fish tape through concealed wall or ceiling cavities, attach an electrical cable, and pull the cable between access openings.",
+      "variables": [
+        "attachment_material"
+      ],
+      "steps": [
+        {
+          "activity": "Determine the cavity_route between the access_openings",
+          "category": "Determine tool-application location",
+          "repeated": false
+        },
+        {
+          "activity": "Push the fish_tape through the cavity_route to the receiving access opening",
+          "category": "Pull or push an object with arm",
+          "repeated": true
+        },
+        {
+          "activity": "Wrap the attachment_material around the electrical_cable and fish_tape to join them",
+          "category": "Wrap around an object and tie",
+          "repeated": false
+        },
+        {
+          "activity": "Pull the fish_tape and attached electrical_cable back through the cavity_route",
+          "category": "Pull or push an object with arm",
+          "repeated": true
+        },
+        {
+          "activity": "Inspect both cable ends and leave sufficient electrical_cable at the access_openings",
+          "category": "Inspect to check state or find issues",
+          "repeated": true
+        }
+      ],
+      "examples": [
+        "Fish a cable through a ceiling and down a wall cavity",
+        "Pull branch-circuit cable between two drywall access openings"
+      ]
+    },
+    {
+      "name": "Composite - Install a junction box",
+      "description": "Pull a supply cable through the junction box and mount the junction box",
+      "variables": [
+        "mounting_surface",
+        "mounting_hardware",
+        "power_tool"
+      ],
+      "steps": [
+        {
+          "activity": "Pull the supply cable into the junction box and leave working length",
+          "category": "Pull or push an object with arm",
+          "repeated": false
+        },
+        {
+          "activity": "Position the junction box against the mounting_surface",
+          "category": "Position an object",
+          "repeated": false
+        },
+        {
+          "activity": "Position the mounting_hardware on the junction box",
+          "category": "Position an object",
+          "repeated": false
+        },
+        {
+          "activity": "Position the power_tool at the mounting_hardware",
+          "category": "Position an object",
+          "repeated": false
+        },
+        {
+          "activity": "Press the trigger of the power_tool",
+          "category": "Press an object with fingers",
+          "repeated": true
+        },
+        {
+          "activity": "Push the mounting_hardware through the junction box and into the mounting_surface with the power_tool",
+          "category": "Pull or push an object with arm",
+          "repeated": true
+        }
+      ],
+      "examples": [
+        "Install a junction box in a wall and pull supply cable into it"
+      ]
+    },
+    {
+      "name": "Composite - Wire and install an electric light fixture",
+      "description": "Connect the light fixture to the supply cable, position the light and mount it to the junction box or mounting bracket.",
+      "variables": [
+        "wire_cutting_tool",
+        "mount_location",
+        "mounting_hardware"
+      ],
+      "steps": [
+        {
+          "activity": "Cut and strip the supply cable and light fixture conductor ends with the wire_cutting_tool",
+          "category": "Cut an object",
+          "repeated": true
+        },
+        {
+          "activity": "Position matching supply and fixture conductors together",
+          "category": "Position an object",
+          "repeated": true
+        },
+        {
+          "activity": "Twist the wire connectors from supply cable onto the joined conductors",
+          "category": "Twist an object using wrist rotation",
+          "repeated": true
+        },
+        {
+          "activity": "Position the light fixture against the junction box or mounting bracket",
+          "category": "Position an object",
+          "repeated": false
+        },
+        {
+          "activity": "Tighten the mounting_hardware with hand or a hand tool to secure the light fixture to the mount_location",
+          "category": "Twist an object using wrist rotation",
+          "repeated": true
+        }
+      ],
+      "examples": [
+        "Wire and mount an LED disk light to a ceiling junction box",
+        "Connect and secure a ceiling light fixture"
+      ]
+    },
+    {
+      "name": "Composite - Wire and install an electrical receptacle",
+      "description": "Prepare branch-circuit conductors, connect them to a receptacle, position the device in its box, and secure it with mounting screws.",
+      "variables": [ 
+        "wire_cutting_tool"
+      ],
+      "steps": [
+        {
+          "activity": "Inspect and identify the branch conductors for hot, neutral, and ground connections",
+          "category": "Inspect to check state or find issues",
+          "repeated": true
+        },
+        {
+          "activity": "Cut and strip the branch conductors to the required working length with the wire_cutting_tool",
+          "category": "Cut an object",
+          "repeated": true
+        },
+        {
+          "activity": "Position each branch conductor at its receptacle terminal or wire connector",
+          "category": "Position an object",
+          "repeated": true
+        },
+        {
+          "activity": "Rotate wire connectors to secure the branch conductors",
+          "category": "Rotate an object with fingertips",
+          "repeated": true
+        },
+        {
+          "activity": "Fasten the branch conductors to the receptacle terminals",
+          "category": "Twist an object using wrist rotation",
+          "repeated": true
+        },
+        {
+          "activity": "Position the wired receptacle in the electrical_box",
+          "category": "Position an object",
+          "repeated": false
+        },
+        {
+          "activity": "Tighten the mounting screws to secure the receptacle in the electrical box",
+          "category": "Twist an object using wrist rotation",
+          "repeated": true
+        }
+      ],
+      "examples": [
+        "Wire and mount a replacement duplex receptacle",
+        "Install a tab-intact receptacle for continuous power"
+      ]
+    }
+  ]
+}

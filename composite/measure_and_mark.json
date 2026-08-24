@@ -1,0 +1,164 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Measure with a measuring tool",
+            "description": "Use a measuring tool to measure a specific length of a piece of material",
+            "variables": [
+                "object_to_measure",
+                "measuring_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the measuring_tool on the object_to_measure or position the object_to_measure along the measuring_tool",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Take measurement to determine the length of the object_to_measure",
+                    "category": "Take measurements",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Measure a pipe with a measuring tape"
+            ]
+        },
+        {
+            "name": "Composite - Mark an object with a marking tool",
+            "description": "Use a marking tool to mark a specific location on a piece of material",
+            "variables": [
+                "object_to_mark",
+                "marking_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the location to mark on the object_to_mark",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the marking_tool at the determined location on the object_to_mark",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Mark the determined location on the object_to_mark with the marking_tool",
+                    "category": "Mark on a surface",
+                    "repeated": false
+                }
+            ]
+        },
+        {
+            "name": "Composite - Measure and mark something",
+            "description": "Use a measuring tool to mark a specific length of a piece of material",
+            "variables": [
+                "object_to_mark",
+                "measuring_tool",
+                "marking_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Measure the object_to_mark with the measuring_tool",
+                    "category": "Composite - Measure with a measuring tool",
+                    "variables": {
+                        "object_to_measure": "object_to_mark",
+                        "measuring_tool": "measuring_tool"
+                    },
+                    "repeated": false
+                },
+                {
+                    "activity": "Mark the measured location on the object_to_mark",
+                    "category": "Composite - Mark an object with a marking tool",
+                    "variables": {
+                        "object_to_mark": "object_to_mark",
+                        "marking_tool": "marking_tool"
+                    },
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Measure and mark a pipe to cut"
+            ]
+        },
+        {
+            "name": "Composite - Mark with chalk line",
+            "description": "Use a chalk line to mark a straight line on a surface.",
+            "variables": [
+                "surface_to_mark",
+                "chalk_line"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the chalk_line across the desired marking area on the surface_to_mark",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull and release the chalk_line to mark a straight line on the surface_to_mark",
+                    "category": "Pull or push an object with fingers",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Mark shingle guide lines on roofing felt with a chalk line"
+            ]
+        },
+        {
+            "name": "Composite - Mark a vertical guide with a plumb bob",
+            "description": "Position a plumb bob and let it hang freely to establish a vertical guide on a surface.",
+            "variables": [
+                "surface_to_mark",
+                "plumb_bob"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the plumb_bob at the topmost point of the vertical guide on the surface_to_mark",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Open fingers briefly to let the plumb_bob hang freely",
+                    "category": "Open fingers",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pinch the thread of the plumb_bob to stop it at the desired location",
+                    "category": "Grab an object",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Use a plumb bob to establish a vertical guide on a wall"
+            ]
+        },
+        {
+            "name": "Composite - Locate and mark a stud position",
+            "description": "Probe a wall to locate a stud behind it and mark the stud position on the wall surface.",
+            "variables": [
+                "wall_surface",
+                "probe",
+                "marking_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Push the probe into the wall_surface",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Determine the stud position based on the probe entrance and resistance",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Mark the stud position on the wall_surface with the marking_tool",
+                    "category": "Mark on a surface",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Probe a foam-board wall with a nail to locate a stud and mark its position"
+            ]
+        }
+    ]
+}

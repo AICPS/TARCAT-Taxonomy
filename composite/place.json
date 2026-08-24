@@ -1,0 +1,219 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Transfer an object from one location to another",
+            "description": "Pick up an object from one location and place it in another location.",
+            "variables": [
+                "object_to_transfer",
+                "source_location",
+                "destination_location"
+            ],
+            "steps": [
+                {
+                    "activity": "Pick up the object_to_transfer from the source_location",
+                    "category": "Pick or place an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Carry the object_to_transfer to the destination_location",
+                    "category": "Carry an object to a location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Place the object_to_transfer in the destination_location",
+                    "category": "Pick or place an object",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Carry roofing felt from a table and place it on a roof",
+                "Carry a shingle from a table and place it on a roof"
+            ]
+        },
+        {
+            "name": "Composite - Spread a mat or sheet on a surface",
+            "description": "Unroll or unfold a mat or sheet and spread it on a surface.",
+            "variables": [
+                "mat_or_sheet",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Unroll or unfold the mat_or_sheet",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Position the mat_or_sheet on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Unroll roofing felt and spread it on a roof"
+            ]
+        },
+        {
+            "name": "Composite - Attach an object to a particular location",
+            "description": "Position an object at a particular location and press it to attach it to that location.",
+            "variables": [
+                "object_to_attach",
+                "location_to_attach"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the object_to_attach at the location_to_attach",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the object_to_attach to attach it to the location_to_attach",
+                    "category": "Pull or push an object with arm",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Stick a tile piece to a wall with mortar"
+            ]
+        },
+        {
+            "name": "Composite - Measure trueness with a level",
+            "description": "Use a level to check whether a surface is level, plumb, or otherwise aligned.",
+            "variables": [
+                "level",
+                "surface_to_check"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the level on the surface_to_check",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Check the bubble in the level to determine if the surface_to_check is level",
+                    "category": "Take measurements",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Check if the top of a cabinet is horizontal with a spirit level"
+            ]
+        },
+        {
+            "name": "Composite - Hold two objects together with a quick action clamp",
+            "description": "Use a quick-action clamp to hold two objects together.",
+            "variables": [
+                "object_to_hold_1",
+                "object_to_hold_2",
+                "clamp"
+            ],
+            "steps": [
+                {
+                    "activity": "Extend the clamp to fit around the object_to_hold_1 and object_to_hold_2",
+                    "category": "Pull or push an object with arm",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the clamp around the object_to_hold_1 and object_to_hold_2",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Push the clamp head to tighten the clamp around the object_to_hold_1 and object_to_hold_2",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Squeeze the clamp handle to hold the object_to_hold_1 and object_to_hold_2 together",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Clamp a story pole to a wing wall template with a quick-action clamp"
+            ]
+        },
+        {
+            "name": "Composite - Insert an object into a slot",
+            "description": "Position an object and insert it into a slot.",
+            "variables": [
+                "object_to_insert",
+                "holding_slot"
+            ],
+            "steps": [
+                {
+                    "activity": "Grasp the holding_slot with one hand and hold it steady",
+                    "category": "Grab an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the object_to_insert near the holding_slot with the other hand",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Push the object_to_insert into the holding_slot to insert it",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Insert a curb key into a valve key base unit",
+                "Insert a handle into a valve key base unit"
+            ]
+        },
+        {
+            "name": "Composite - Take out an object from a slot",
+            "description": "Take out an object from a slot by pulling it out.",
+            "variables": [
+                "object_to_take_out",
+                "holding_slot"
+            ],
+            "steps": [
+                {
+                    "activity": "Grasp the holding_slot with one hand and hold it steady",
+                    "category": "Grab an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the object_to_take_out out of the holding_slot to take it out",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Take a handle out of a valve key base unit",
+                "Take a curb key out of a valve key base unit"
+            ]
+        },
+        {
+            "name": "Composite - Move an elongated object back and forth within an opening",
+            "description": "Move a long object back and forth within an opening by pushing and pulling it.",
+            "variables": [
+                "elongated_object",
+                "opening"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the elongated_object within the opening",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Push the elongated_object into the opening",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Pull the elongated_object out of the opening",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Move a power washer wand back and forth within a drain pipe",
+                "Move a drain pipe back and forth through a tunnel beneath a walkway"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Cut an object on a particular location",
+            "description": "Determine the location to cut and cut the object using a cutting tool.",
+            "variables": [
+                "object_to_cut",
+                "cutting_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the location to cut on the object_to_cut",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the cutting_tool near the determined location on the object_to_cut",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Cut the object_to_cut with the cutting_tool along the determined location",
+                    "category": "Cut an object",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Cut a wire at a selected location with pliers"
+            ]
+        },
+        {
+            "name": "Composite - Cut something to measurement without marking",
+            "description": "Use a measuring tool to determine the location to cut on a piece of material and cut the material using a cutting tool.",
+            "variables": [
+                "object_to_cut",
+                "cutting_tool",
+                "measuring_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the measuring_tool on the object_to_cut or position the object_to_cut along the measuring_tool",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Take measurement to determine the cut location on the object_to_cut",
+                    "category": "Take measurements",
+                    "repeated": false
+                },
+                {
+                    "activity": "Cut the object_to_cut with the cutting_tool along the mark",
+                    "category": "Composite - Cut an object on a particular location",
+                    "variables": {
+                        "object_to_cut": "object_to_cut",
+                        "cutting_tool": "cutting_tool"
+                    },
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Cut a shingle with a utility knife using another shingle as a guide"
+            ]
+        },
+        {
+            "name": "Composite - Cut something to measurement with marking",
+            "description": "Use a measuring tool to mark a specific location of a piece of material and cut the material following the mark using a cutting tool.",
+            "variables": [
+                "object_to_cut",
+                "cutting_tool",
+                "marking_tool",
+                "measuring_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Measure with measuring_tool and mark the cut location on the  object_to_cut",
+                    "category": "Composite - Measure and mark something",
+                    "repeated": false,
+                    "variables": {
+                        "object_to_mark": "object_to_cut",
+                        "measuring_tool": "measuring_tool",
+                        "marking_tool": "marking_tool"
+                    }
+                },
+                {
+                    "activity": "Cut the object_to_cut with the cutting_tool along the mark",
+                    "category": "Composite - Cut an object on a particular location",
+                    "variables": {
+                        "object_to_cut": "object_to_cut",
+                        "cutting_tool": "cutting_tool"
+                    },
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Cut roof flashing to length with a hacksaw"
+            ]
+        },
+        {
+            "name": "Composite - Hold and cut something",
+            "description": "Hold an object on a surface with one hand and cut it with a cutting tool using the other hand.",
+            "variables": [
+                "object_to_cut",
+                "cutting_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position of the object_to_cut",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the cutting tool near the determined position of the object_to_cut",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Hold the object_to_cut with one hand",
+                    "category": "Pull or push an object with arm",
+                    "repeated": false
+                },
+                {
+                    "activity": "Cut the object_to_cut with the cutting_tool using the other hand",
+                    "category": "Cut an object",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Hold a pipe with one hand and cut it with a handsaw using the other hand"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,452 @@
+{
+    "information_processing": {
+        "name": "Information Processing",
+        "description": "The process of gathering, processing, and using information to make decisions",
+        "groups": [
+            {
+                "name": "Assessment",
+                "description": "The process of evaluating information to make decisions",
+                "primitives": [
+                    "Take measurements",
+                    "Determine tool-application location",
+                    "Inspect to check state or find issues"
+                ]
+            },
+            {
+                "name": "Comprehension",
+                "description": "The process of understanding and interpreting information",
+                "primitives": [
+                    "Study plan, instruction or specifications",
+                    "Listen to or observe instructions or signals"
+                ]
+            },
+            {
+                "name": "Planning",
+                "description": "The process of planning, calculating, selecting, and estimating the resources needed to complete a task",
+                "primitives": [
+                    "Estimate time, materials, labor and cost",
+                    "Select and procure tools and materials",
+                    "Prepare design, layout or installation plans"
+                ]
+            }
+        ],
+        "primitives": [
+            {
+                "name": "Take measurements",
+                "description": "Perceive readings from a level, scale, gauge, or digital measurement. The reading can be abstract, such as level balance, or numeric, textual, or digital.",
+                "examples": [
+                    "Measure a level balance to determine whether it is perfectly horizontal or vertical",
+                    "Read a pressure gauge"
+                ]
+            },
+            {
+                "name": "Determine tool-application location",
+                "description": "Determine the point, line, or area where a tool should be applied",
+                "examples": [
+                    "Identify the point to drill or make a hole",
+                    "Determine the location of the cap of a nail gun"
+                ]
+            },
+            {
+                "name": "Inspect to check state or find issues",
+                "description": "Inspect something to determine the location and cause of a problem or issue",
+                "examples": [
+                    "Inspect a roof for problems"
+                ]
+            },
+            {
+                "name": "Study plan, instruction or specifications",
+                "description": "Read plan, instruction or specifications to determine work activities",
+                "examples": [
+                    "Read specification on an air compressor"
+                ]
+            },
+            {
+                "name": "Listen to or observe instructions or signals",
+                "description": "Listen to instructions or see communication signals from others",
+                "examples": []
+            },
+            {
+                "name": "Estimate time, materials, labor and cost",
+                "description": "Estimate the amount of time, materials, labor and cost needed to complete a task",
+                "examples": [
+                    "Estimate materials and labor required to complete roofing jobs"
+                ]
+            },
+            {
+                "name": "Select and procure tools and materials",
+                "description": "Select suitable tools or materials and arrange for them to be ordered or purchased",
+                "examples": [
+                    "Select and order lumber",
+                    "Select and purchase tools or surface finishes for painting jobs"
+                ]
+            },
+            {
+                "name": "Prepare design, layout or installation plans",
+                "description": "Prepare a design or sketch, or plan the layout, installation, or repair of construction systems according to plans, specifications, and codes",
+                "examples": [
+                    "Plan the layout and installation of electrical wiring",
+                    "Prepare a sketch showing equipment locations"
+                ]
+            }
+        ]
+    },
+    "communication": {
+        "name": "Communication",
+        "description": "The exchange of information between individuals or groups",
+        "groups": [
+            {
+                "name": "Collaboration",
+                "description": "Collaborate and coordinate with other workers through speech and gestures",
+                "primitives": [
+                    "Talk to convey information",
+                    "Use gestures to signal other workers",
+                    "Schedule and coordinate work with others"
+                ]
+            },
+            {
+                "name": "Documentation",
+                "description": "The use of written words to convey information",
+                "primitives": ["Prepare records, documents, and reports"]
+            }
+        ],
+        "primitives": [
+            {
+                "name": "Talk to convey information",
+                "description": "The use of spoken words to convey information",
+                "examples": [
+                    "Speak to a fellow worker about a project"
+                ]
+            },
+            {
+                "name": "Use gestures to signal other workers",
+                "description": "Use hand, arm, or body movements to signal other workers",
+                "examples": [
+                    "Hand signal a crane operator"
+                ]
+            },
+            {
+                "name": "Schedule and coordinate work with others",
+                "description": "Schedule and coordinate work with other workers to complete a task",
+                "examples": [
+                    "Coordinate with a fellow worker to lift a heavy object"
+                ]
+            },
+            {
+                "name": "Prepare records, documents, and reports",
+                "description": "Maintain records, files, and document actions, and progress reports",
+                "examples": [
+                    "Write a report on a project"
+                ]
+            }
+        ]
+    },
+    "tool_use": {
+        "name": "Tool Use",
+        "description": "The application of tools to complete tasks",
+        "groups": [
+            {
+                "name": "Finger manipulation",
+                "description": "Manipulate controls, tools, or objects primarily through finger motion or force, with little gross arm movement",
+                "primitives": [
+                    "Pull or push an object with fingers",
+                    "Press an object with fingers",
+                    "Open fingers",
+                    "Rotate an object with fingertips"
+                ]
+            },
+            {
+                "name": "Arm translation and positioning",
+                "description": "Translate, place, or position a tool or object through coordinated hand and arm movement",
+                "primitives": [
+                    "Grab an object",
+                    "Pull or push an object with arm",
+                    "Pick or place an object",
+                    "Position an object",
+                    "Move tool along a linear path"
+                ]
+            },
+            {
+                "name": "Arm and wrist rotation",
+                "description": "Rotate or reorient the arm, wrist, tool, or object to apply force, change orientation, or collect and transfer material",
+                "primitives": [
+                    "Twist an object using wrist rotation",
+                    "Pivot a tool about a fixed point",
+                    "Swing arm while holding an object",
+                    "Reorient an object",
+                    "Pour liquid from a container",
+                    "Scoop material with a tool"
+                ]
+            },
+            {
+                "name": "Mixing motion",
+                "description": "Use repeated, circular, or wrapping motions to agitate, combine, or secure materials",
+                "primitives": [
+                    "Shake an object",
+                    "Stir liquid and solid mixture",
+                    "Wrap around an object and tie"
+                ]
+            },
+            {
+                "name": "Surface-contact manipulation",
+                "description": "Move a tool while maintaining controlled contact with a work surface to mark, cut, spread, or stroke",
+                "primitives": [
+                    "Mark on a surface",
+                    "Cut an object",
+                    "Spread object on surface",
+                    "Stroke tool on surface"
+                ]
+            },
+            
+            {
+                "name": "Whole-body locomotion and transport",
+                "description": "Use the legs and torso to move between locations, climb, or transport an object",
+                "primitives": [
+                    "Walk to a location",
+                    "Carry an object to a location",
+                    "Climb up or down"
+                ]
+            },
+            {
+                "name": "Whole-body load handling",
+                "description": "Use whole-body force and postural control to manipulate heavy objects or bend and straighten the body",
+                "primitives": [
+                    "Pull or push a heavy object",
+                    "Pick or place a heavy object",
+                    "Carry a heavy object",
+                    "Bend down or straighten up"
+                ]
+            }
+        ],
+        "primitives": [
+            {
+                "name": "Pull or push an object with fingers",
+                "description": "Grasp something firmly with fingertips and pull it with finger force to detach it or push it to attach it to something. May require wrist movement, but does not require arm force",
+                "examples": [
+                    "Open the cap of a nail gun",
+                    "Plug an air tool into an air compressor",
+                    "Open the water outlet on an air compressor"
+                ]
+            },
+            {
+                "name": "Press an object with fingers",
+                "description": "Press or squeeze an object with the inner part of the fingers",
+                "examples": [
+                    "Press a button to turn on an air compressor",
+                    "Press release button on a utility knife to take out the blade",
+                    "Squeeze a lubricant bottle to dispense lubricant",
+                    "Pull trigger of an power screwdriver to fasten a screw",
+                    "Pull trigger of a nail gun to shoot a nail",
+                    "Spray insulation foam"
+                ]
+            },
+            {
+                "name": "Open fingers",
+                "description": "Open fingers briefly to release an object before grasping again",
+                "examples": [
+                    "Open fingers briefly to let a plumb bob hang freely"
+                ]
+            },
+            {
+                "name": "Rotate an object with fingertips",
+                "description": "Move the fingers in a circular direction to hold and tighten something along a thread or operate a valve. A large object may require all fingers and wrist motion, while a small object can be rotated with two or three fingers.",
+                "examples": [
+                    "Adjust a pressure valve on an air compressor (large)",
+                    "Tighten a straw onto a spray can (small)"
+                ]
+            },
+            {
+                "name": "Grab an object",
+                "description": "Take a hold of something quickly with single arm or both arms.",
+                "examples": [
+                    "Grab the thread of a plumb bob to stop it at the desired location"
+                ]
+            },
+            {
+                "name": "Pull or push an object with arm",
+                "description": "Grasp something firmly with all or some fingers and pull it with arm force to detach it from something or push it with arm force to attach it to something",
+                "examples": [
+                    "Open a spray can",
+                    "Extend a measuring tape",
+                    "Attach a cord to an electrical socket",
+                    "Push drill bit of a power drill into an object to make a hole",
+                    "Open a door"
+                ]
+            },
+            {
+                "name": "Pick or place an object",
+                "description": "Pick up or place a discrete object within reach of the arms using one or both hands",
+                "examples": [
+                    "Pick up a trowel",
+                    "Place an electrical box on the floor"
+                ]
+            },
+            {
+                "name": "Position an object",
+                "description": "Position, place, or align a tool or object for use or application at a location. Hold the object in the air without dropping it or placing it on a surface.",
+                "examples": [
+                    "Position a lubricant bottle",
+                    "Position an electrical cord at a wall socket"
+                ]
+            },
+            {
+                "name": "Move tool along a linear path",
+                "description": "Move tool in a linear path to apply something to a surface or move the tool towards a target location.",
+                "examples": [
+                    "Move a sealing gun along a joint to apply sealant",
+                    "Dip a paint brush into a paint can"
+                ]
+            },
+            {
+                "name": "Twist an object using wrist rotation",
+                "description": "Twist an object with the wrist to tighten or loosen it along a thread or to operate a valve",
+                "examples": [
+                    "Rotate a pressure valve on an air compressor"
+                ]
+            },
+            {
+                "name": "Pivot a tool about a fixed point",
+                "description": "Pivot a tool about a fixed point to apply force to an object",
+                "examples": [
+                    "Rotate a wrench to tighten a bolt"
+                ]
+            },
+            {
+                "name": "Swing arm while holding an object",
+                "description": "Swing the arm in a circular motion with the elbow as the pivot point",
+                "examples": [
+                    "Swing a hammer to hit a nail"
+                ]
+            },
+            {
+                "name": "Shake an object",
+                "description": "Shake the arm with repeated back-and-forth motion",
+                "examples": [
+                    "Shake a spray can"
+                ]
+            },
+            {
+                "name": "Reorient an object",
+                "description": "Change the orientation of an object with a wrist or arm motion. This can be done with one or both hands.",
+                "examples": [
+                    "Flip a shingle to the other side",
+                    "Change orientation of a brick"
+                ]
+            },
+            {
+                "name": "Pour liquid from a container",
+                "description": "Pour liquid from a container by tilting the container to allow the liquid to flow out",
+                "examples": [
+                    "Pour a mixture into a container"
+                ]
+            },
+            {
+                "name": "Scoop material with a tool",
+                "description": "Collect and lift loose, granular, or viscous material by inserting a tool into or beneath the material",
+                "examples": [
+                    "Scoop mortar with a trowel",
+                    "Scoop soil with a shovel"
+                ]
+            },
+            {
+                "name": "Stir liquid and solid mixture",
+                "description": "Stir a mixture of liquid and solid with a tool in a circular motion",
+                "examples": [
+                    "Stir mortar with a trowel"
+                ]
+            },
+            {
+                "name": "Wrap around an object and tie",
+                "description": "Wrap a string, rope, or cord around an object and tie it in a knot",
+                "examples": [
+                    "Wrap a rope around a post and tie it in a knot",
+                    "Untie the knots on a plumb bob"
+                ]
+            },
+            {
+                "name": "Mark on a surface",
+                "description": "Mark with a pencil or chalk on a surface to plan an action",
+                "examples": [
+                    "Mark with a pencil along a speed square",
+                    "Mark a point on a wall to fasten a screw"
+                ]
+            },
+            {
+                "name": "Cut an object",
+                "description": "Cut something with a single forward or backward motion or repeated back-and-forth motion.",
+                "examples": [
+                    "Cut a stud with an electric saw",
+                    "Cut shingles with a utility knife"
+                ]
+            },            
+            {
+                "name": "Spread object on surface",
+                "description": "Rub a tool on a surface to apply or spread something",
+                "examples": [
+                    "Rub a trowel on a surface to spread mortar"
+                ]
+            },
+            {
+                "name": "Stroke tool on surface",
+                "description": "Rub a tool on a surface gently to smooth or finish it",
+                "examples": [
+                    "Use a brush to paint on a surface",
+                    "Use a roller to paint on a surface"
+                ]
+            },
+            {
+                "name": "Walk to a location",
+                "description": "Walk empty-handed to a location",
+                "examples": [
+                    "Walk to a wall to inspect it"
+                ]
+            },
+            {
+                "name": "Carry an object to a location",
+                "description": "Carry a light tool or object with one arm or both arms to a location",
+                "examples": [
+                    "Carry a spray can (single arm)",
+                    "Carry a felt paper (bimanual)"
+                ]
+            },
+            {
+                "name": "Climb up or down",
+                "description": "Climb up or down stairs or a ladder",
+                "examples": [
+                    "Climb up a ladder"
+                ]
+            },
+            {
+                "name": "Pull or push a heavy object",
+                "description": "Pull or push a heavy object resting on a surface to position and align it. This can require one or both hands.",
+                "examples": [
+                    "Adjust a wall cabinet on a rack"
+                ]
+            },
+            {
+                "name": "Pick or place a heavy object",
+                "description": "Pick up or place a heavy object with both arms",
+                "examples": [
+                    "Pick up a ladder",
+                    "Place a wall cabinet"
+                ]
+            },
+            {
+                "name": "Carry a heavy object",
+                "description": "Carry a heavy object using both hands, holding the object from below or from the side",
+                "examples": [
+                    "Carry a wall cabinet"
+                ]
+            },
+            {
+                "name": "Bend down or straighten up",
+                "description": "Bend down at the waist to pick up an object and straighten up to stand",
+                "examples": [
+                    "Pick up a leaf blower from the ground",
+                    "Pick up a saw from the floor",
+                    "Bend down and pick up a stud from the ground"
+                ]
+            }
+        ]
+    }
+}

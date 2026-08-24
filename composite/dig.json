@@ -1,0 +1,37 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Dig soil with a digging tool",
+            "description": "Use a digging tool to dig soil, create a hole, trench or tunnel.",
+            "variables": [
+                "digging_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the digging_tool on the soil",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Push the digging tool into the soil",
+                    "category": "Pull or push an object with arm",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the digging tool out of the soil",
+                    "category": "Pull or push an object with arm",
+                    "repeated": false
+                },
+                {
+                    "activity": "Swing the digging tool to remove soil from the hole, trench or tunnel",
+                    "category": "Swing arm while holding an object",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Dig a trench with a shovel",
+                "Dig a tunnel beneath a walkway with a drain spade"
+            ]
+        }
+    ]
+}

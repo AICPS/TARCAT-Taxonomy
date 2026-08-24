@@ -1,0 +1,67 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Drill hole",
+            "description": "Drill a hole in an object using a power drill and drill bit.",
+            "variables": [
+                "object_to_drill",
+                "power_drill"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the power_drill at the drilling location on the object_to_drill",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the trigger of the power_drill",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Push the drill bit of the power_drill into the object_to_drill",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Pre-drill holes in roof flashing with a power drill"
+            ]
+        },
+        {
+            "name": "Composite - Hammer an object into a surface",
+            "description": "Use a hammer repeatedly to drive an object into a surface.",
+            "variables": [
+                "object_to_hammer",
+                "hammer",
+                "target_surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the position on the target_surface where the object_to_hammer will be hammered",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the object_to_hammer on the target_surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the hammer near the head of the object_to_hammer",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Swing the hammer to hit the object_to_hammer and drive it into the surface",
+                    "category": "Swing arm while holding an object",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Hammer a bolster to break mortar from a brick joint",
+                "Hammer a nail through roofing material into a roof"
+            ]
+        }
+    ]
+}

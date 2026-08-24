@@ -1,0 +1,34 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Probe for a signal",
+            "description": "Use a probe to detect a signal from a measurement tool or device",
+            "variables": [
+                "probe",
+                "signal_source",
+                "observed_signal"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the probe near the signal_source",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Measure the signal from the probe",
+                    "category": "Take measurements",
+                    "repeated": false
+                },
+                {
+                    "activity": "Observe the measured signal and compare it to the observed_signal",
+                    "category": "Listen to or observe instructions or signals",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Use an outlet tester to confirm that a receptacle is powered",
+                "Use a magnetic stud finder to locate a ceiling stud"
+            ]
+        }
+    ]
+}

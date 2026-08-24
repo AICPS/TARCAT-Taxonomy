@@ -1,0 +1,47 @@
+{
+  "skills": [
+    {
+      "name": "Composite - Heat-bend PVC conduit",
+      "description": "Heat a PVC conduit uniformly while rotating it, form the softened section to the required bend, and hold or cool it until the shape is fixed.",
+      "variables": [
+        "cooling_medium"
+      ],
+      "steps": [
+        {
+          "activity": "Determine the bend locations needed to produce the target shape",
+          "category": "Determine tool-application location",
+          "repeated": false
+        },
+        {
+          "activity": "Position the heat gun at a bend location on the pvc conduit",
+          "category": "Position an object",
+          "repeated": false
+        },
+        {
+          "activity": "Rotate the pvc conduit while heating the bend location uniformly",
+          "category": "Twist an object using wrist rotation",
+          "repeated": true
+        },
+        {
+          "activity": "Inspect and test the pvc conduit until it is soft enough to bend",
+          "category": "Inspect to check state or find issues",
+          "repeated": true
+        },
+        {
+          "activity": "Push or pull the softened pvc conduit into the target shape",
+          "category": "Pull or push an object with arm",
+          "repeated": true
+        },
+        {
+          "activity": "Hold or place the formed pvc conduit in the cooling_medium until the bend is fixed",
+          "category": "Position an object",
+          "repeated": false
+        }
+      ],
+      "examples": [
+        "Heat-bend two shallow offsets in PVC conduit for a flush box entry",
+        "Form a PVC electrical conduit bend with a heat gun and cool it in water"
+      ]
+    }
+  ]
+}

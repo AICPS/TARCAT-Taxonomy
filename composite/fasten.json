@@ -1,0 +1,172 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Fasten an object with power tool",
+            "description": "Use a power tool to fasten an object to a surface using fixing hardware. Assumes that the object has been positioned on the surface.",
+            "variables": [
+                "object_to_fasten",
+                "fastening_surface",
+                "fixing_hardware",
+                "power_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the fixing_hardware on the object_to_fasten",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the power_tool at the fixing_hardware",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the trigger of the power_tool",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Push the fixing_hardware through the object_to_fasten and into the fastening_surface using the power_tool",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Fasten a wing wham to wall studs with screws and an power screwdriver",
+                "Fasten roof flashing to a wall with screws and an power screwdriver"
+            ]
+        },
+        {
+            "name": "Composite - Loosen an object with a power tool",
+            "description": "Use a power tool to loosen an object from a surface",
+            "variables": [
+                "object_to_loosen",
+                "fastening_surface",
+                "fixing_hardware",
+                "power_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the power_tool at the fixing_hardware",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the trigger of the power_tool",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Pull the fixing_hardware out of the fastening_surface and through the object_to_loosen using the power_tool",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Remove the screws from an electrical panel cover with a power screwdriver"
+            ]
+        },
+        {
+            "name": "Composite - Fasten an object with a handheld screwdriver",
+            "description": "Rotate a screwdriver by hand to fasten an object to a surface.",
+            "variables": [
+                "object_to_fasten",
+                "fastening_surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the screwdriver at the screw on the object_to_fasten",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Rotate screwdriver to drive the screw into the fastening_surface",
+                    "category": "Twist an object using wrist rotation",
+                    "repeated": true
+                },
+                {
+                    "activity": "Push the screwdriver to driver the screw forward",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Tighten a hose clamp on a pipe with a screwdriver"
+            ]
+        },
+        {
+            "name": "Composite - Loosen an object with a handheld screwdriver",
+            "description": "Rotate a screwdriver by hand to loosen an object from a surface.",
+            "variables": [
+                "object_to_loosen",
+                "fastening_surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the screwdriver at the screw on the object_to_loosen",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Rotate screwdriver to loosen the screw from the fastening_surface",
+                    "category": "Twist an object using wrist rotation",
+                    "repeated": true
+                },
+                {
+                    "activity": "Pull the screwdriver to pull the screw out of the fastening_surface",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Loosen a terminal screw with a handheld screwdriver"
+            ]
+        },
+        {
+            "name": "Composite - Fasten an electrical wire to a terminal with a screwdriver",
+            "description": "Position a wire in a terminal and rotate a screwdriver to fasten the wire to the terminal.",
+            "variables": [
+                "wire_to_fasten",
+                "terminal"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the wire_to_fasten in the terminal",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Rotate the screwdriver to tighten the terminal screw and fasten the wire_to_fasten to the terminal",
+                    "category": "Twist an object using wrist rotation",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Fasten a wire to a circuit breaker terminal with a screwdriver"
+            ]
+        },
+        {
+            "name": "Composite - Loosen an electrical wire from a terminal with a screwdriver",
+            "description": "Rotate a screwdriver to loosen a terminal screw and remove the wire from the terminal.",
+            "variables": [
+                "wire_to_loosen",
+                "terminal"
+            ],
+            "steps": [
+                {
+                    "activity": "Rotate the screwdriver to loosen the terminal screw holding the wire_to_loosen in the terminal",
+                    "category": "Twist an object using wrist rotation",
+                    "repeated": true
+                },
+                {
+                    "activity": "Pull the wire_to_loosen out of the terminal",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Loosen a wire from a circuit breaker terminal with a screwdriver"
+            ]
+        }
+    ]
+}
