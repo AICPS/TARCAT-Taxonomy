@@ -1,14 +1,14 @@
 # Construction Task Activities Taxonomy
 
-This directory contains the resources for TAxonomy of Robotic workflow in Construction tasks AcTivities (TARCAT). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations.  
+This directory contains the action primitives, skills and video annotations for TARCAT (Taxonomy of Construction Task Activities for Robot Workers). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations.  
 
 `primitives.json` contains the taxonomy of primitive actions. `composite/` directory contains composite actions, also termed as skills.
 
 ## Labeling Videos
 
-TARCAT taxonomy aims to identify the distinct activities that are performed during construction tasks and label those activies under a taxonomy. The human viewer watched the full video and determined the distinct significant activities required in order to perform the task. This identification eliminates the need to comprehensive annotate of the full video. So, only labels for the distinct activities observed during the video are provided. If the same activity is repeated in a contiguous segment, then the whole segment is labeled with the activity and the `repeated` property of the activity is set to `true`. If the same activity is performed in different context in that same video, both activities are also labeled separately. However, repetation of the same activity in the same context in that video is not labeled.
+TARCAT taxonomy aims to identify the distinct activities that are performed during construction tasks and label those activies under a taxonomy. The human viewer watched the full video and determined the distinct significant activities required in order to perform the task. This identification eliminates the need for comprehensively annotation of the full video. So, only labels for the distinct activities observed during the video are provided. If the same activity is repeated in a contiguous segment, then the whole segment is labeled with the activity and the `repeated` property of the activity is set to `true`. If the same activity is performed in different context in that same video, both activities are also labeled separately. However, repetation of the same activity in the same context in that video is not labeled.
 
-The TARCAT taxonomy also aims to understand all key activities to perform a construction task. Sometimes the speaker mentions a required activity for a task without demonstrating it. Such activities are included in the activities list for the sake of completeness and the `segment` for such activity is set to an empty string (`""`).
+The TARCAT taxonomy also aims to understand all key activities to perform a construction task. Sometimes the speaker mentions a required activity or an activity is evident as a prerequisite for a sub-task, but it may not be demonstrated in the video. Such activities are included in the activities list for the sake of completeness and the `segment` for such activity is set to an empty string (`""`).
 
 ## Format
 
