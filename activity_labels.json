@@ -28,6 +28,7 @@
             "onet_task_number": 2,
             "onet_task": "Lubricate, clean, or repair machinery, equipment, or tools.",
             "task_videos": [
+              1,
               2
             ]
           },
@@ -35,7 +36,8 @@
             "onet_task_number": 3,
             "onet_task": "Signal equipment operators to facilitate alignment, movement, or adjustment of machinery, equipment, or materials.",
             "task_videos": [
-              3
+              3,
+              4
             ]
           },
           {
@@ -56,12 +58,16 @@
           {
             "onet_task_number": 8,
             "onet_task": "Load, unload, or identify building materials, machinery, or tools, distributing them to the appropriate locations, according to project plans or specifications.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 9,
             "onet_task": "Position, join, align, or seal structural components, such as concrete wall sections or pipes.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 10,
@@ -91,7 +97,9 @@
           {
             "onet_task_number": 15,
             "onet_task": "Erect or dismantle scaffolding, shoring, braces, traffic barricades, ramps, or other temporary structures.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 16,
@@ -136,7 +144,9 @@
           {
             "onet_task_number": 24,
             "onet_task": "Mix, pour, or spread concrete, using portable cement mixers.",
-            "task_videos": []
+            "task_videos": [
+              7
+            ]
           },
           {
             "onet_task_number": 25,
@@ -159,30 +169,16 @@
             "id": 1,
             "video_name": "Using an air compressor",
             "video_url": "https://youtu.be/1DOKGLERPCg",
+            "length": 240,
             "mapped_tasks": [
-              1
+              1,
+              2
             ],
             "tools": [
               "air compressor",
               "air tool"
             ],
             "activities": [
-              {
-                "activity": "Read specification of compressor",
-                "activity_short": "Read specification",
-                "category": "Study plan, instruction or specifications",
-                "variables": {},
-                "repeated": false,
-                "segment": "2:31 - 2:38"
-              },
-              {
-                "activity": "Read specification of air tool",
-                "activity_short": "Read specification",
-                "category": "Study plan, instruction or specifications",
-                "variables": {},
-                "repeated": false,
-                "segment": "1:11 - 1:17"
-              },
               {
                 "activity": "Plug in air tool to compressor",
                 "activity_short": "Attach air tool to compressor",
@@ -194,10 +190,10 @@
               {
                 "activity": "Adjust compressor pressure valve",
                 "activity_short": "Adjust valve",
-                "category": "Rotate an object with fingertips",
+                "category": "Twist an object using wrist rotation",
                 "variables": {},
                 "repeated": false,
-                "segment": "1:01 - 1:05"
+                "segment": "1:02 - 1:06"
               },
               {
                 "activity": "Read valve readings",
@@ -205,23 +201,15 @@
                 "category": "Take measurements",
                 "variables": {},
                 "repeated": false,
-                "segment": "1:05 - 1:07"
+                "segment": "1:06 - 1:07"
               },
               {
-                "activity": "Position electric cord of a compressor to a socket",
-                "activity_short": "Position electric cord",
-                "category": "Position an object",
+                "activity": "Read specification of air tool",
+                "activity_short": "Read specification",
+                "category": "Study plan, instruction or specifications",
                 "variables": {},
                 "repeated": false,
-                "segment": ""
-              },
-              {
-                "activity": "Plug in the electrical cord of compressor to a socket",
-                "activity_short": "Plug in electrical cord",
-                "category": "Pull or push an object with arm",
-                "variables": {},
-                "repeated": false,
-                "segment": ""
+                "segment": "1:11 - 1:17"
               },
               {
                 "activity": "Turn compressor on/off",
@@ -232,12 +220,20 @@
                 "segment": ""
               },
               {
-                "activity": "Dry out compressor by letting water out",
+                "activity": "Rotate the water valve to dry out compressor by letting water out",
                 "activity_short": "Open water outlet",
-                "category": "Rotate an object with fingertips",
+                "category": "Pivot a tool about a fixed point",
                 "variables": {},
                 "repeated": false,
                 "segment": "1:51 - 1:56"
+              },
+              {
+                "activity": "Read specification of compressor",
+                "activity_short": "Read specification",
+                "category": "Study plan, instruction or specifications",
+                "variables": {},
+                "repeated": false,
+                "segment": "2:31 - 2:38"
               }
             ]
           },
@@ -245,6 +241,7 @@
             "id": 2,
             "video_name": "Lubricating a nail gun",
             "video_url": "https://youtu.be/RHFqmDpR4zM",
+            "length": 157,
             "mapped_tasks": [
               2
             ],
@@ -267,23 +264,35 @@
                 "category": "Pull or push an object with fingers",
                 "variables": {},
                 "repeated": false,
-                "segment": "0:59 - 1:01"
+                "segment": "0:59 - 1:00"
               },
               {
-                "activity": "Align lubricant bottle to nail gun head",
-                "activity_short": "Align lubricant bottle",
+                "activity": "Release the cap of the nail gun",
+                "activity_short": "Release cap",
+                "category": "Open fingers",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:00 - 1:01"
+              },
+              {
+                "activity": "Put a drop of lubricant through the nail gun head opening",
+                "activity_short": "Put drop of liquid",
+                "category": "Composite - Drop liquid from a container onto a surface or object",
+                "variables": {
+                  "liquid_to_drop": "lubricant",
+                  "container": "lubricant bottle",
+                  "drop_target": "nail gun head opening"
+                },
+                "repeated": true,
+                "segment": "1:08 - 1:20"
+              },
+              {
+                "activity": "Position the empty nail gun against a wood piece",
+                "activity_short": "Position nail gun",
                 "category": "Position an object",
                 "variables": {},
                 "repeated": false,
-                "segment": "1:02 - 1:07"
-              },
-              {
-                "activity": "Put a few drops of lubricant through the nail gun head opening",
-                "activity_short": "Put drops of liquid",
-                "category": "Press an object with fingers",
-                "variables": {},
-                "repeated": false,
-                "segment": "1:08 - 1:20"
+                "segment": "1:29 - 1:32"
               },
               {
                 "activity": "Use empty nail gun a few times to let lubricant go inside",
@@ -291,7 +300,7 @@
                 "category": "Press an object with fingers",
                 "variables": {},
                 "repeated": true,
-                "segment": "1:29 - 1:39"
+                "segment": "1:32 - 1:39"
               }
             ]
           },
@@ -299,6 +308,7 @@
             "id": 3,
             "video_name": "Hand-signaling Crane Operator",
             "video_url": "https://youtu.be/me2fjrX9hf8",
+            "length": 229,
             "mapped_tasks": [
               3
             ],
@@ -311,6 +321,155 @@
                 "variables": {},
                 "repeated": true,
                 "segment": "0:37 - 7:39"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "video_name": "Installing concrete tilt wall panel",
+            "video_url": "https://youtu.be/QxZMOtuFgd0",
+            "length": 144,
+            "mapped_tasks": [
+              3,
+              8,
+              9,
+              15
+            ],
+            "tools": [
+              "lever",
+              "rope",
+              "spade"
+            ],
+            "activities": [
+              {
+                "activity": "Hold, push, or pull the tilt wall panel or its braces to obtain the desired panel position and orientation",
+                "activity_short": "Position tilt wall panel and braces",
+                "category": "Pull or push a heavy object",
+                "variables": {},
+                "repeated": true,
+                "segment": "0:26 - 1:52"
+              },
+              {
+                "activity": "Walk to the spade",
+                "activity_short": "Walk to spade",
+                "category": "Walk to a location",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:13 - 1:15"
+              },
+              {
+                "activity": "Bend down to pick up the spade and straighten up",
+                "activity_short": "Bend down and pick up spade",
+                "category": "Bend down or straighten up",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:15 - 1:17"
+              },
+              {
+                "activity": "Use a spade to put soil near the wall panel and secure it in position",
+                "activity_short": "Place soil beside wall panel",
+                "category": "Composite - Dig soil with a digging tool",
+                "variables": {
+                  "digging_tool": "spade"
+                },
+                "repeated": true,
+                "segment": "1:49 - 1:56"
+              },
+              {
+                "activity": "Use a lever to align the wall panel with adjacent panels",
+                "activity_short": "Align panel with lever",
+                "category": "Pivot a tool about a fixed point",
+                "variables": {},
+                "repeated": true,
+                "segment": "1:52 - 2:01"
+              },
+              {
+                "activity": "Untie the rope from the wall-panel braces",
+                "activity_short": "Untie rope from braces",
+                "category": "Wrap around, tie or untie",
+                "variables": {},
+                "repeated": false,
+                "segment": "2:10 - 2:23"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "video_name": "Mixing concrete in a mixer",
+            "video_url": "https://youtu.be/u_0EaD37Ftc",
+            "length": 125,
+            "mapped_tasks": [
+              24
+            ],
+            "tools": [
+              "bucket",
+              "mixer",
+              "scoop trowel"
+            ],
+            "activities": [
+              {
+                "activity": "Pour water from a bucket into the mixer",
+                "activity_short": "Pour water into mixer",
+                "category": "Pour liquid from a container",
+                "variables": {},
+                "repeated": false,
+                "segment": "0:27 - 0:35"
+              },
+              {
+                "activity": "Position the concrete-mix bag inside the mixer",
+                "activity_short": "Position concrete-mix bag",
+                "category": "Position an object",
+                "variables": {},
+                "repeated": false,
+                "segment": "0:46 - 0:47"
+              },
+              {
+                "activity": "Shake the concrete-mix bag to put concrete mix into the mixer",
+                "activity_short": "Shake concrete mix into mixer",
+                "category": "Shake an object",
+                "variables": {},
+                "repeated": true,
+                "segment": "0:47 - 0:52"
+              },
+              {
+                "activity": "Pull the concrete-mix bag upward to empty it",
+                "activity_short": "Lift bag to empty concrete mix",
+                "category": "Pull or push an object with arm",
+                "variables": {},
+                "repeated": true,
+                "segment": "0:47 - 0:52"
+              },
+              {
+                "activity": "Turn on the mixer by pulling its trigger",
+                "activity_short": "Turn on mixer",
+                "category": "Pull or push an object with arm",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:07 - 1:08"
+              },
+              {
+                "activity": "Pour more water from the bucket into the mixer",
+                "activity_short": "Add more water to mixer",
+                "category": "Pour liquid from a container",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:19 - 1:22"
+              },
+              {
+                "activity": "Scoop some concrete mixture with a scoop trowel",
+                "activity_short": "Scoop concrete mixture",
+                "category": "Scoop material with a tool",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:34 - 1:36"
+              },
+              {
+                "activity": "Inspect the concrete mixture to determine whether it is mixed well",
+                "activity_short": "Inspect concrete mixture",
+                "category": "Inspect to check state or find issues",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:37 - 1:38"
               }
             ]
           }
@@ -419,7 +578,8 @@
             "onet_task_number": 2,
             "onet_task": "Measure and mark cutting lines on materials, using a ruler, pencil, chalk, and marking gauge.",
             "task_videos": [
-              1
+              1,
+              5
             ]
           },
           {
@@ -433,12 +593,18 @@
           {
             "onet_task_number": 5,
             "onet_task": "Shape or cut materials to specified measurements, using hand tools, machines, or power saws.",
-            "task_videos": []
+            "task_videos": [
+              1,
+              5
+            ]
           },
           {
             "onet_task_number": 6,
             "onet_task": "Verify trueness of structure, using plumb bob and level.",
-            "task_videos": []
+            "task_videos": [
+              1,
+              3
+            ]
           },
           {
             "onet_task_number": 8,
@@ -448,12 +614,17 @@
           {
             "onet_task_number": 9,
             "onet_task": "Install structures or fixtures, such as windows, frames, floorings, trim, or hardware, using carpenters' hand or power tools.",
-            "task_videos": []
+            "task_videos": [
+              3,
+              5
+            ]
           },
           {
             "onet_task_number": 11,
             "onet_task": "Remove damaged or defective parts or sections of structures and repair or replace, using hand tools.",
-            "task_videos": []
+            "task_videos": [
+              2
+            ]
           },
           {
             "onet_task_number": 13,
@@ -463,12 +634,16 @@
           {
             "onet_task_number": 14,
             "onet_task": "Bore boltholes in timber, masonry or concrete walls, using power drill.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 15,
             "onet_task": "Install rough door and window frames, subflooring, fixtures, or temporary supports in structures undergoing construction or repair.",
-            "task_videos": []
+            "task_videos": [
+              2
+            ]
           },
           {
             "onet_task_number": 16,
@@ -488,12 +663,17 @@
           {
             "onet_task_number": 20,
             "onet_task": "Build or repair cabinets, doors, frameworks, floors, or other wooden fixtures used in buildings, using woodworking machines, carpenter's hand tools, or power tools.",
-            "task_videos": []
+            "task_videos": [
+              2,
+              3
+            ]
           },
           {
             "onet_task_number": 21,
             "onet_task": "Finish surfaces of woodwork or wallboard in houses or buildings, using paint, hand tools, or paneling.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 23,
@@ -513,7 +693,9 @@
           {
             "onet_task_number": 27,
             "onet_task": "Apply shock-absorbing, sound-deadening, or decorative paneling to ceilings or walls.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 28,
@@ -536,62 +718,61 @@
             "id": 1,
             "video_name": "Using a speed square",
             "video_url": "https://youtu.be/gNhWpuWvtEA",
+            "length": 312,
             "mapped_tasks": [
-              2
+              2,
+              5,
+              6
             ],
             "tools": [
-              "electric saw",
+              "circular saw",
+              "measuring tape",
               "pencil",
               "speed square"
             ],
             "activities": [
               {
-                "activity": "Locate place to position speed square",
-                "activity_short": "Locate place",
-                "category": "Determine tool-application location",
-                "variables": {},
-                "repeated": false,
-                "segment": "0:43 - 0:45"
-              },
-              {
-                "activity": "Position speed square on lumber",
-                "activity_short": "Position speed square",
-                "category": "Position an object",
-                "variables": {},
-                "repeated": false,
-                "segment": "0:45 - 0:47"
-              },
-              {
-                "activity": "Mark line with pencil to cut along",
-                "activity_short": "Mark with pencil",
-                "category": "Mark on a surface",
-                "variables": {},
-                "repeated": false,
-                "segment": "0:47 - 0:49"
-              },
-              {
-                "activity": "Pick saw",
-                "activity_short": "Pick saw",
-                "category": "Pick or place an object",
-                "variables": {},
-                "repeated": false,
-                "segment": "1:00 - 1:03"
-              },
-              {
-                "activity": "Turn on electric saw",
-                "activity_short": "Turn on electric saw",
-                "category": "Press an object with fingers",
-                "variables": {},
-                "repeated": false,
-                "segment": "1:11 - 1:12"
-              },
-              {
-                "activity": "Cut with electric saw along the line",
-                "activity_short": "Cut with electric saw",
-                "category": "Cut an object",
-                "variables": {},
+                "activity": "Measure lumber with a speed square and mark it with a pencil",
+                "activity_short": "Measure and mark lumber with speed square",
+                "category": "Composite - Measure and mark something",
+                "variables": {
+                  "object_to_mark": "lumber",
+                  "measuring_tool": "speed square",
+                  "marking_tool": "pencil"
+                },
                 "repeated": true,
-                "segment": "1:12 - 1:17"
+                "segment": "0:47 - 0:54"
+              },
+              {
+                "activity": "Bend down to pick up the circular saw and straighten up",
+                "activity_short": "Bend down and pick up circular saw",
+                "category": "Bend down or straighten up",
+                "variables": {},
+                "repeated": false,
+                "segment": "1:01 - 1:03"
+              },
+              {
+                "activity": "Hold the speed square beside the mark and cut the lumber with the circular saw along the mark",
+                "activity_short": "Hold guide and cut lumber",
+                "category": "Composite - Hold and cut something",
+                "variables": {
+                  "object_to_cut": "lumber",
+                  "cutting_tool": "circular saw"
+                },
+                "repeated": false,
+                "segment": "1:10 - 1:16"
+              },
+              {
+                "activity": "Measure lumber with a measuring tape and mark it with a pencil",
+                "activity_short": "Measure and mark lumber with tape",
+                "category": "Composite - Measure and mark something",
+                "variables": {
+                  "object_to_mark": "lumber",
+                  "measuring_tool": "measuring tape",
+                  "marking_tool": "pencil"
+                },
+                "repeated": true,
+                "segment": "1:58 - 2:06"
               }
             ]
           },
@@ -599,25 +780,30 @@
             "id": 2,
             "video_name": "Installing drywall backing for repairs",
             "video_url": "https://youtu.be/dOYsbvIVm6g",
+            "length": 207,
             "mapped_tasks": [
-              3
+              3,
+              11,
+              15,
+              20
             ],
             "tools": [
-              "power screwdriver"
+              "power screwdriver",
+              "screw"
             ],
             "activities": [
               {
-                "activity": "Pick up stud",
-                "activity_short": "Pick up stud",
-                "category": "Pick or place an object",
+                "activity": "Grab the stud",
+                "activity_short": "Grab stud",
+                "category": "Grab an object",
                 "variables": {},
                 "repeated": false,
                 "segment": "0:43 - 0:48"
               },
               {
-                "activity": "Pick up power screwdriver",
-                "activity_short": "Pick up power screwdriver",
-                "category": "Pick or place an object",
+                "activity": "Pick up power screwdriver from the ground",
+                "activity_short": "Pick up power screwdriver from the ground",
+                "category": "Bend down or straighten up",
                 "variables": {},
                 "repeated": false,
                 "segment": "0:48 - 0:50"
@@ -631,24 +817,8 @@
                 "segment": "0:55 - 1:00"
               },
               {
-                "activity": "Attach screw to screwdriver",
-                "activity_short": "Attach screw to screwdriver",
-                "category": "Position an object",
-                "variables": {},
-                "repeated": false,
-                "segment": "1:04 - 1:05"
-              },
-              {
-                "activity": "Locate fastening locations",
-                "activity_short": "Locate fastening locations",
-                "category": "Determine tool-application location",
-                "variables": {},
-                "repeated": false,
-                "segment": "1:05 - 1:07"
-              },
-              {
-                "activity": "Hold stud and tighten screws",
-                "activity_short": "Tighten screws with power screwdriver",
+                "activity": "Fasten the stud to the back of the drywall with screws using a power screwdriver",
+                "activity_short": "Fasten stud to drywall with screws",
                 "category": "Composite - Fasten an object with power tool",
                 "variables": {
                   "object_to_fasten": "stud",
@@ -657,7 +827,7 @@
                   "power_tool": "power screwdriver"
                 },
                 "repeated": true,
-                "segment": "1:07 - 1:09"
+                "segment": "1:04 - 2:54"
               }
             ]
           },
@@ -665,11 +835,16 @@
             "id": 3,
             "video_name": "Installing wall cabinets",
             "video_url": "https://youtu.be/mHMjFYr9UOo",
+            "length": 99,
             "mapped_tasks": [
-              3
+              3,
+              6,
+              9,
+              20
             ],
             "tools": [
               "power drill",
+              "shim strip",
               "spirit level"
             ],
             "activities": [
@@ -696,6 +871,22 @@
                 "variables": {},
                 "repeated": false,
                 "segment": "0:03 - 0:10"
+              },
+              {
+                "activity": "Lift cabinet a little to insert shim strip",
+                "activity_short": "Lift cabinet to insert shim strip",
+                "category": "Pull or push a heavy object",
+                "variables": {},
+                "repeated": false,
+                "segment": "0:18 - 0:20"
+              },
+              {
+                "activity": "Insert shim strip under cabinet",
+                "activity_short": "Insert shim strip",
+                "category": "Position an object",
+                "variables": {},
+                "repeated": false,
+                "segment": "0:18 - 0:20"
               },
               {
                 "activity": "Measure trueness of the cabinet with a level",
@@ -728,6 +919,287 @@
                 },
                 "repeated": true,
                 "segment": "0:53 - 1:35"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "video_name": "Installing Acoustic Wall Panels to a Flat Wall",
+            "video_url": "https://youtu.be/yaODgZEbFG0",
+            "length": 847,
+            "mapped_tasks": [
+              2,
+              5,
+              9,
+              14,
+              21,
+              27
+            ],
+            "tools": [
+              "claw hammer",
+              "drill bit",
+              "glue gun",
+              "handsaw",
+              "jigsaw",
+              "marker",
+              "measuring tape",
+              "pencil",
+              "pipe and wire detector",
+              "pliers",
+              "power drill",
+              "power screwdriver",
+              "sandpaper",
+              "screw",
+              "spirit level",
+              "utility knife",
+              "wall panel",
+              "wall plugs"
+            ],
+            "activities": [
+              {
+                "activity": "Place a spirit level against the wall and measure trueness",
+                "activity_short": "Measure wall trueness",
+                "category": "Composite - Measure trueness with a level",
+                "variables": {
+                  "level": "spirit level",
+                  "surface_to_check": "office wall"
+                },
+                "repeated": false,
+                "segment": "1:13 - 1:18"
+              },
+              {
+                "activity": "Trim the panel edge with a utility knife",
+                "activity_short": "Trim panel edge",
+                "category": "Composite - Cut an object on a particular location",
+                "variables": {
+                  "object_to_cut": "wall panel",
+                  "cutting_tool": "utility knife"
+                },
+                "repeated": false,
+                "segment": "2:03 - 2:13"
+              },
+              {
+                "activity": "Scan the fixing area for concealed pipes and electrical wires with a pipe and wire detector",
+                "activity_short": "Scan wall for pipes and wires",
+                "category": "Composite - Probe for a signal",
+                "variables": {
+                  "probe": "pipe and wire detector",
+                  "signal_source": "concealed pipes and electrical wires",
+                  "observed_signal": "indicator light"
+                },
+                "repeated": false,
+                "segment": "3:33 - 3:38"
+              },
+              {
+                "activity": "Carry wall cabinet",
+                "activity_short": "Carry wall cabinet",
+                "category": "Carry a heavy object",
+                "variables": {},
+                "repeated": false,
+                "segment": "3:38 - 3:40"
+              },
+              {
+                "activity": "Measure and mark a line on the wall with a spirit level and pencil",
+                "activity_short": "Measure and mark wall line",
+                "category": "Composite - Measure and mark something",
+                "variables": {
+                  "object_to_mark": "wall",
+                  "measuring_tool": "spirit level",
+                  "marking_tool": "pencil"
+                },
+                "repeated": true,
+                "segment": "3:53 - 4:00"
+              },
+              {
+                "activity": "Drill holes in the wall panel with a power drill",
+                "activity_short": "Drill holes in panel",
+                "category": "Composite - Drill hole",
+                "variables": {
+                  "object_to_drill": "wall panel"
+                },
+                "repeated": true,
+                "segment": "4:05 - 4:12"
+              },
+              {
+                "activity": "Measure and mark wall locations for drilling with a measuring tape and pencil",
+                "activity_short": "Mark wall drilling locations",
+                "category": "Composite - Measure and mark something",
+                "variables": {
+                  "object_to_mark": "wall",
+                  "measuring_tool": "measuring tape",
+                  "marking_tool": "pencil"
+                },
+                "repeated": true,
+                "segment": "4:12 - 4:16"
+              },
+              {
+                "activity": "Drill holes in the wall with a power drill",
+                "activity_short": "Drill holes in wall",
+                "category": "Composite - Drill hole",
+                "variables": {
+                  "object_to_drill": "wall"
+                },
+                "repeated": true,
+                "segment": "4:16 - 4:21"
+              },
+              {
+                "activity": "Put wall plugs into the drilled holes in the wall",
+                "activity_short": "Insert wall plugs",
+                "category": "Pull or push an object with fingers",
+                "variables": {},
+                "repeated": false,
+                "segment": "4:25 - 4:28"
+              },
+              {
+                "activity": "Hammer screws into the wall plugs with a claw hammer",
+                "activity_short": "Hammer screws into wall plugs",
+                "category": "Composite - Hammer an object into a surface",
+                "variables": {
+                  "object_to_hammer": "screw",
+                  "hammer": "claw hammer",
+                  "target_surface": "wall plugs"
+                },
+                "repeated": false,
+                "segment": "4:29 - 4:33"
+              },
+              {
+                "activity": "Drive a screw through the wall panel into the wall with a power screwdriver",
+                "activity_short": "Fasten panel to wall",
+                "category": "Composite - Fasten an object with power tool",
+                "variables": {
+                  "object_to_fasten": "wall panel",
+                  "fastening_surface": "wall",
+                  "fixing_hardware": "screw",
+                  "power_tool": "power screwdriver"
+                },
+                "repeated": false,
+                "segment": "4:38 - 4:52"
+              },
+              {
+                "activity": "Flip the wall panel",
+                "activity_short": "Flip wall panel",
+                "category": "Reorient an object",
+                "variables": {},
+                "repeated": false,
+                "segment": "6:28 - 6:30"
+              },
+              {
+                "activity": "Cut the felt with pliers to remove a wood slat from the panel",
+                "activity_short": "Cut panel felt with pliers",
+                "category": "Composite - Cut an object on a particular location",
+                "variables": {
+                  "object_to_cut": "felt",
+                  "cutting_tool": "pliers"
+                },
+                "repeated": true,
+                "segment": "6:38 - 7:04"
+              },
+              {
+                "activity": "Pull the cut wood slat to remove it from the panel",
+                "activity_short": "Remove cut wood slat",
+                "category": "Pull or push an object with arm",
+                "variables": {},
+                "repeated": false,
+                "segment": "7:04 - 7:06"
+              },
+              {
+                "activity": "Walk near the wall corner",
+                "activity_short": "Walk to wall corner",
+                "category": "Walk to a location",
+                "variables": {},
+                "repeated": false,
+                "segment": "8:26 - 8:29"
+              },
+              {
+                "activity": "Measure the electric socket location with a measuring tape",
+                "activity_short": "Measure socket location",
+                "category": "Composite - Measure with a measuring tool",
+                "variables": {
+                  "object_to_measure": "electric socket",
+                  "measuring_tool": "measuring tape"
+                },
+                "repeated": false,
+                "segment": "8:33 - 8:34"
+              },
+              {
+                "activity": "Mark the cutting location on the back of the panel using the measurement",
+                "activity_short": "Mark panel cutting location",
+                "category": "Composite - Measure and mark something",
+                "variables": {
+                  "object_to_mark": "panel back",
+                  "measuring_tool": "handsaw",
+                  "marking_tool": "marker"
+                },
+                "repeated": false,
+                "segment": "8:40 - 8:45"
+              },
+              {
+                "activity": "Cut the felt with a utility knife",
+                "activity_short": "Cut felt with utility knife",
+                "category": "Composite - Cut an object on a particular location",
+                "variables": {
+                  "object_to_cut": "felt",
+                  "cutting_tool": "utility knife"
+                },
+                "repeated": true,
+                "segment": "9:29 - 9:43"
+              },
+              {
+                "activity": "Cut the wood slat with a jigsaw",
+                "activity_short": "Cut wood slat with jigsaw",
+                "category": "Composite - Cut an object on a particular location",
+                "variables": {
+                  "object_to_cut": "wood slat",
+                  "cutting_tool": "jigsaw"
+                },
+                "repeated": true,
+                "segment": "9:43 - 9:51"
+              },
+              {
+                "activity": "Rub sandpaper on the wood slat to smooth the edges",
+                "activity_short": "Sand wood-slat edges",
+                "category": "Composite - Rub an abrasive back and forth on a surface",
+                "variables": {
+                  "surface": "wood slat",
+                  "abrasive_tool": "sandpaper"
+                },
+                "repeated": false,
+                "segment": "9:51 - 9:55"
+              },
+              {
+                "activity": "Apply adhesive under each slat with a glue gun",
+                "activity_short": "Apply adhesive under slats",
+                "category": "Composite - Apply paste from a gun or tube",
+                "variables": {
+                  "paste_to_apply": "adhesive",
+                  "application_tool": "glue gun",
+                  "surface": "underneath wood slat"
+                },
+                "repeated": false,
+                "segment": "12:10 - 12:14"
+              },
+              {
+                "activity": "Apply adhesive to the back of the panel with a glue gun",
+                "activity_short": "Apply adhesive to panel back",
+                "category": "Composite - Apply paste from a gun or tube",
+                "variables": {
+                  "paste_to_apply": "adhesive",
+                  "application_tool": "glue gun",
+                  "surface": "panel back"
+                },
+                "repeated": false,
+                "segment": "12:15 - 12:19"
+              },
+              {
+                "activity": "Attach the wall panel to the wall with adhesive",
+                "activity_short": "Attach panel to wall",
+                "category": "Composite - Attach an object with adhesive to a surface",
+                "variables": {
+                  "surface": "wall",
+                  "object_to_attach": "wall panel"
+                },
+                "repeated": false,
+                "segment": "12:19 - 12:25"
               }
             ]
           }
@@ -870,12 +1342,18 @@
           {
             "onet_task_number": 4,
             "onet_task": "Use a variety of tools or equipment, such as power construction equipment, measuring devices, power tools, and testing equipment, such as oscilloscopes, ammeters, or test lamps.",
-            "task_videos": []
+            "task_videos": [
+              2,
+              3
+            ]
           },
           {
             "onet_task_number": 5,
             "onet_task": "Assemble, install, test, or maintain electrical or electronic wiring, equipment, appliances, apparatus, or fixtures, using hand tools or power tools.",
-            "task_videos": []
+            "task_videos": [
+              2,
+              3
+            ]
           },
           {
             "onet_task_number": 6,
@@ -887,7 +1365,10 @@
           {
             "onet_task_number": 10,
             "onet_task": "Test electrical systems or continuity of circuits in electrical wiring, equipment, or fixtures, using testing devices, such as ohmmeters, voltmeters, or oscilloscopes, to ensure compatibility and safety of system.",
-            "task_videos": []
+            "task_videos": [
+              2,
+              3
+            ]
           },
           {
             "onet_task_number": 11,
@@ -902,12 +1383,17 @@
           {
             "onet_task_number": 15,
             "onet_task": "Repair or replace wiring, equipment, or fixtures, using hand tools or power tools.",
-            "task_videos": []
+            "task_videos": [
+              2,
+              3
+            ]
           },
           {
             "onet_task_number": 16,
             "onet_task": "Construct or fabricate parts, using hand tools, according to specifications.",
-            "task_videos": []
+            "task_videos": [
+              1
+            ]
           },
           {
             "onet_task_number": 19,
@@ -930,8 +1416,10 @@
             "id": 1,
             "video_name": "Bending PVC Electrical Conduit with a Heat Gun",
             "video_url": "https://youtu.be/bvpzfsczbAA",
+            "length": 138,
             "mapped_tasks": [
-              2
+              2,
+              16
             ],
             "tools": [
               "gloves",
@@ -995,8 +1483,13 @@
             "id": 2,
             "video_name": "Installing ceiling light without existing wiring",
             "video_url": "https://youtu.be/K4GJhgb0RmM",
+            "length": 988,
             "mapped_tasks": [
-              3
+              3,
+              4,
+              5,
+              10,
+              15
             ],
             "tools": [
               "cable",
@@ -1206,8 +1699,13 @@
             "id": 3,
             "video_name": "Replacing a Circuit Breaker",
             "video_url": "https://youtu.be/s6OGF66IskI",
+            "length": 287,
             "mapped_tasks": [
-              6
+              4,
+              5,
+              6,
+              10,
+              15
             ],
             "tools": [
               "circuit breaker",
@@ -1463,20 +1961,24 @@
             "onet_task_number": 4,
             "onet_task": "Locate and mark the position of pipe installations, connections, passage holes, or fixtures in structures, using measuring instruments such as rulers or levels.",
             "task_videos": [
-              4
+              4,
+              5
             ]
           },
           {
             "onet_task_number": 5,
             "onet_task": "Cut, thread, or hammer pipes to specifications, using tools such as saws, cutting torches, pipe threaders, or pipe benders.",
             "task_videos": [
+              2,
               5
             ]
           },
           {
             "onet_task_number": 6,
             "onet_task": "Lay out full scale drawings of pipe systems, supports, or related equipment, according to blueprints.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 10,
@@ -1506,7 +2008,9 @@
           {
             "onet_task_number": 16,
             "onet_task": "Modify, clean, or maintain pipe systems, units, fittings, or related machines or equipment, using hand or power tools.",
-            "task_videos": []
+            "task_videos": [
+              2
+            ]
           },
           {
             "onet_task_number": 17,
@@ -1564,6 +2068,7 @@
             "id": 1,
             "video_name": "Shutting off a pipe section with a valve key",
             "video_url": "https://youtu.be/0ep9iHMBBMk",
+            "length": 356,
             "mapped_tasks": [
               1
             ],
@@ -1693,8 +2198,11 @@
             "id": 2,
             "video_name": "Installing irrigation & drain pipes under walkways or driveways",
             "video_url": "https://youtu.be/h1a6nRbJ0BA",
+            "length": 305,
             "mapped_tasks": [
-              2
+              2,
+              5,
+              16
             ],
             "tools": [
               "drain pipe",
@@ -1809,6 +2317,7 @@
             "id": 3,
             "video_name": "Applying solvent cement to join PVC pipe",
             "video_url": "https://youtu.be/gEaM53TXaM4",
+            "length": 282,
             "mapped_tasks": [
               3
             ],
@@ -1937,8 +2446,10 @@
             "id": 4,
             "video_name": "Using a johnson rotary laser level",
             "video_url": "https://youtu.be/3sLKKhanh9I",
+            "length": 292,
             "mapped_tasks": [
-              4
+              4,
+              6
             ],
             "tools": [
               "laser level"
@@ -2046,7 +2557,9 @@
             "id": 5,
             "video_name": "Cutting PVC pipe perfectly straight cut",
             "video_url": "https://youtu.be/32pkuGoKcyc",
+            "length": 425,
             "mapped_tasks": [
+              4,
               5
             ],
             "tools": [
@@ -2175,12 +2688,17 @@
           {
             "onet_task_number": 1,
             "onet_task": "Cover surfaces with dropcloths or masking tape and paper to protect surfaces during painting.",
-            "task_videos": []
+            "task_videos": [
+              5,
+              7
+            ]
           },
           {
             "onet_task_number": 3,
             "onet_task": "Apply paint, stain, varnish, enamel, or other finishes to equipment, buildings, bridges, or other structures, using brushes, spray guns, or rollers.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 4,
@@ -2190,7 +2708,9 @@
           {
             "onet_task_number": 5,
             "onet_task": "Smooth surfaces, using sandpaper, scrapers, brushes, steel wool, or sanding machines.",
-            "task_videos": []
+            "task_videos": [
+              3
+            ]
           },
           {
             "onet_task_number": 6,
@@ -2200,7 +2720,9 @@
           {
             "onet_task_number": 7,
             "onet_task": "Wash and treat surfaces with oil, turpentine, mildew remover, or other preparations, and sand rough spots to ensure that finishes will adhere properly.",
-            "task_videos": []
+            "task_videos": [
+              3
+            ]
           },
           {
             "onet_task_number": 8,
@@ -2210,7 +2732,9 @@
           {
             "onet_task_number": 10,
             "onet_task": "Remove old finishes by stripping, sanding, wire brushing, burning, or using water or abrasive blasting.",
-            "task_videos": []
+            "task_videos": [
+              3
+            ]
           },
           {
             "onet_task_number": 11,
@@ -2220,7 +2744,9 @@
           {
             "onet_task_number": 12,
             "onet_task": "Use special finishing techniques such as sponging, ragging, layering, or faux finishing.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 13,
@@ -2240,7 +2766,9 @@
           {
             "onet_task_number": 17,
             "onet_task": "Cut stencils and brush or spray lettering or decorations on surfaces.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 18,
@@ -2253,7 +2781,379 @@
             "task_videos": []
           }
         ],
-        "videos": []
+        "videos": [
+          {
+            "id": 3,
+            "video_name": "Safely Stripping Paint from Woodwork",
+            "video_url": "https://youtu.be/oR20LbydCYo",
+            "length": 544,
+            "mapped_tasks": [
+              5,
+              7,
+              10
+            ],
+            "tools": [
+              "bucket",
+              "gloves",
+              "laminated stripping paper",
+              "lead-test swab",
+              "lead-test verification card",
+              "paint stripper",
+              "paintbrush",
+              "protective mask",
+              "putty knife",
+              "safety glasses",
+              "scrub pad",
+              "utility knife"
+            ],
+            "activities": [
+              {
+                "activity": "Use a swab to test layered paint on the door for lead",
+                "activity_short": "Test door paint for lead",
+                "category": "Composite - Test a painted surface for lead",
+                "variables": {
+                  "painted_surface": "door paint",
+                  "scoring_tool": "utility knife"
+                },
+                "repeated": false,
+                "segment": "1:48 - 3:10"
+              },
+              {
+                "activity": "Pull up the lid of the paint stripper bucket",
+                "activity_short": "Open paint stripper bucket",
+                "category": "Pull or push an object with arm",
+                "variables": {},
+                "repeated": false,
+                "segment": "3:27 - 3:28"
+              },
+              {
+                "activity": "Place the paint stripper bucket lid on the floor",
+                "activity_short": "Place bucket lid on floor",
+                "category": "Pick or place an object",
+                "variables": {},
+                "repeated": false,
+                "segment": "3:29 - 3:29"
+              },
+              {
+                "activity": "Climb up a step ladder",
+                "activity_short": "Climb step ladder",
+                "category": "Climb up or down",
+                "variables": {},
+                "repeated": false,
+                "segment": ""
+              },
+              {
+                "activity": "Apply paint stripper to the wood with a paintbrush",
+                "activity_short": "Brush paint stripper onto wood",
+                "category": "Composite - Dip a brush or roller into a liquid and apply it to a surface",
+                "variables": {
+                  "liquid_to_apply": "paint stripper",
+                  "application_tool": "paintbrush",
+                  "surface": "wood"
+                },
+                "repeated": false,
+                "segment": "3:42 - 4:12"
+              },
+              {
+                "activity": "Cover the applied paint stripper with laminated stripping paper to accelerate curing",
+                "activity_short": "Cover stripper with laminated paper",
+                "category": "Composite - Mask a surface with an adhesive masking material",
+                "variables": {
+                  "surface_to_protect": "applied paint stripper",
+                  "masking_material": "laminated stripping paper"
+                },
+                "repeated": false,
+                "segment": "4:13 - 4:26"
+              },
+              {
+                "activity": "Cut excess laminated stripping paper with a utility knife",
+                "activity_short": "Cut excess stripping paper",
+                "category": "Composite - Cut an object on a particular location",
+                "variables": {
+                  "object_to_cut": "laminated stripping paper",
+                  "cutting_tool": "utility knife"
+                },
+                "repeated": false,
+                "segment": "4:27 - 4:39"
+              },
+              {
+                "activity": "Take off paint stripper and paint from the wood with a plastic putty knife",
+                "activity_short": "Scrape stripper and paint from wood",
+                "category": "Composite - Take off some material from a surface with a tool",
+                "variables": {
+                  "material": "paint stripper and paint",
+                  "tool": "plastic putty knife",
+                  "surface": "wood"
+                },
+                "repeated": false,
+                "segment": "5:12 - 5:49"
+              },
+              {
+                "activity": "Rub a scrub pad with warm water over the wood to clean leftover paint from the door",
+                "activity_short": "Scrub leftover paint from wood",
+                "category": "Composite - Rub an abrasive back and forth on a surface",
+                "variables": {
+                  "surface": "wood",
+                  "abrasive_tool": "scrub pad"
+                },
+                "repeated": false,
+                "segment": "5:49 - 6:01"
+              },
+              {
+                "activity": "Inspect the cleaned bare wood and determine whether it is ready for light sanding and a new finish",
+                "activity_short": "Inspect cleaned bare wood",
+                "category": "Inspect to check state or find issues",
+                "variables": {},
+                "repeated": false,
+                "segment": "6:07 - 6:28"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "video_name": "Painting a scallop wall border with a stencil",
+            "video_url": "https://youtu.be/-EhYrZgi32U",
+            "length": 1050,
+            "mapped_tasks": [
+              1,
+              3,
+              12,
+              17
+            ],
+            "tools": [
+              "foam roller",
+              "paint",
+              "paintbrush",
+              "pencil",
+              "spirit level",
+              "stencil",
+              "stencil brush",
+              "tape",
+              "wall roller"
+            ],
+            "activities": [
+              {
+                "activity": "Mark a horizontal guide with a spirit level and pencil and tape along the guide",
+                "activity_short": "Measure and mark horizontal guide",
+                "category": "Composite - Measure and mark something",
+                "variables": {
+                  "object_to_mark": "wall",
+                  "measuring_tool": "spirit level",
+                  "marking_tool": "pencil"
+                },
+                "repeated": false,
+                "segment": "2:41 - 3:15"
+              },
+              {
+                "activity": "Attach tape to the wall along the horizontal guide",
+                "activity_short": "Tape along horizontal guide",
+                "category": "Composite - Attach a tape to a surface",
+                "variables": {
+                  "surface": "wall",
+                  "tape": "tape"
+                },
+                "repeated": false,
+                "segment": "3:15 - 3:28"
+              },
+              {
+                "activity": "Stir the paint with a paintbrush",
+                "activity_short": "Stir paint with paintbrush",
+                "category": "Stir liquid and solid mixture",
+                "variables": {},
+                "repeated": false,
+                "segment": "3:33 - 3:37"
+              },
+              {
+                "activity": "Paint the edges of the wall with a paintbrush",
+                "activity_short": "Paint wall edges",
+                "category": "Composite - Dip a brush or roller into a liquid and apply it to a surface",
+                "variables": {
+                  "liquid_to_apply": "paint",
+                  "application_tool": "paintbrush",
+                  "surface": "wall"
+                },
+                "repeated": false,
+                "segment": "3:37 - 3:43"
+              },
+              {
+                "activity": "Paint the middle of the wall with a wall roller",
+                "activity_short": "Roll paint onto middle of wall",
+                "category": "Composite - Dip a brush or roller into a liquid and apply it to a surface",
+                "variables": {
+                  "liquid_to_apply": "paint",
+                  "application_tool": "wall roller",
+                  "surface": "wall"
+                },
+                "repeated": false,
+                "segment": "3:43 - 3:51"
+              },
+              {
+                "activity": "Pull the masking tape away after the painted upper edge has dried",
+                "activity_short": "Remove masking tape",
+                "category": "Pull or push an object with arm",
+                "variables": {},
+                "repeated": true,
+                "segment": "4:07 - 4:11"
+              },
+              {
+                "activity": "Tape the stencil to the wall",
+                "activity_short": "Tape stencil to wall",
+                "category": "Composite - Tape an object to a surface",
+                "variables": {
+                  "object_to_fasten": "stencil",
+                  "surface": "wall",
+                  "tape": "tape"
+                },
+                "repeated": false,
+                "segment": "4:25 - 4:46"
+              },
+              {
+                "activity": "Apply paint to the inner edges of the stencil with a stencil brush",
+                "activity_short": "Paint stencil edges",
+                "category": "Composite - Dip a brush or roller into a liquid and apply it to a surface",
+                "variables": {
+                  "liquid_to_apply": "paint",
+                  "application_tool": "stencil brush",
+                  "surface": "wall"
+                },
+                "repeated": false,
+                "segment": "6:19 - 8:13"
+              },
+              {
+                "activity": "Apply paint inside the stencil with a foam roller",
+                "activity_short": "Roll paint inside stencil",
+                "category": "Composite - Dip a brush or roller into a liquid and apply it to a surface",
+                "variables": {
+                  "liquid_to_apply": "paint",
+                  "application_tool": "foam roller",
+                  "surface": "wall"
+                },
+                "repeated": false,
+                "segment": "8:14 - 11:07"
+              },
+              {
+                "activity": "Remove the taped stencil from the wall",
+                "activity_short": "Remove stencil from wall",
+                "category": "Composite - Remove a taped object from a surface",
+                "variables": {
+                  "object_to_remove": "stencil",
+                  "surface": "wall"
+                },
+                "repeated": false,
+                "segment": "11:20 - 11:27"
+              },
+              {
+                "activity": "Grab the stencil with both hands",
+                "activity_short": "Grab stencil",
+                "category": "Grab an object",
+                "variables": {},
+                "repeated": false,
+                "segment": "14:52 - 14:54"
+              },
+              {
+                "activity": "Flip the stencil",
+                "activity_short": "Flip stencil",
+                "category": "Reorient an object",
+                "variables": {},
+                "repeated": false,
+                "segment": "14:55 - 14:58"
+              },
+              {
+                "activity": "Roll the stencil",
+                "activity_short": "Roll stencil",
+                "category": "Twist an object using wrist rotation",
+                "variables": {},
+                "repeated": true,
+                "segment": "15:04 - 15:20"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "video_name": "Masking a room up before spray paint",
+            "video_url": "https://youtu.be/gV-RdmGdVas",
+            "length": 534,
+            "mapped_tasks": [
+              1
+            ],
+            "tools": [
+              "masking film",
+              "masking tape dispenser",
+              "painter's tape",
+              "polythene",
+              "utility knife"
+            ],
+            "activities": [
+              {
+                "activity": "Attach masking film on the top edge of the window using a tape dispenser",
+                "activity_short": "Attach masking film with tape dispenser",
+                "category": "Composite - Attach masking material with tape dispenser",
+                "variables": {
+                  "surface_to_protect": "window",
+                  "masking_tape": "painter's tape",
+                  "masking_material": "masking film"
+                },
+                "repeated": false,
+                "segment": "1:55 - 2:36"
+              },
+              {
+                "activity": "Spread masking film over the window and tape both sides of the window",
+                "activity_short": "Mask window for painting",
+                "category": "Composite - Mask a surface for painting",
+                "variables": {
+                  "surface_to_protect": "window",
+                  "masking_material": "masking film",
+                  "masking_tape": "painter's tape"
+                },
+                "repeated": false,
+                "segment": "2:38 - 4:02"
+              },
+              {
+                "activity": "Cut extra masking film with a utility knife",
+                "activity_short": "Cut extra masking film",
+                "category": "Composite - Cut an object on a particular location",
+                "variables": {
+                  "object_to_cut": "masking film",
+                  "cutting_tool": "utility knife"
+                },
+                "repeated": false,
+                "segment": "4:07 - 4:18"
+              },
+              {
+                "activity": "Pull the cut portion of masking film to remove it",
+                "activity_short": "Remove cut masking film",
+                "category": "Pull or push an object with arm",
+                "variables": {},
+                "repeated": false,
+                "segment": "4:20 - 4:21"
+              },
+              {
+                "activity": "Mask electric wires in a small opening with a polythene bag and tape the polythene",
+                "activity_short": "Mask wires in small opening",
+                "category": "Composite - Mask a surface for painting",
+                "variables": {
+                  "surface_to_protect": "electric wires",
+                  "masking_material": "polythene",
+                  "masking_tape": "painter's tape"
+                },
+                "repeated": false,
+                "segment": "5:17 - 5:57"
+              },
+              {
+                "activity": "Mask electric wires in a larger opening with leftover polythene and tape the polythene",
+                "activity_short": "Mask wires in large opening",
+                "category": "Composite - Mask a surface for painting",
+                "variables": {
+                  "surface_to_protect": "electric wires",
+                  "masking_material": "polythene",
+                  "masking_tape": "painter's tape"
+                },
+                "repeated": false,
+                "segment": "6:03 - 6:56"
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -2304,7 +3204,8 @@
             "onet_task_number": 1,
             "onet_task": "Measure distance from reference points and mark guidelines to lay out work, using plumb bobs and levels.",
             "task_videos": [
-              1
+              1,
+              2
             ]
           },
           {
@@ -2318,7 +3219,9 @@
             "onet_task_number": 3,
             "onet_task": "Apply and smooth mortar or other mixture over work surface.",
             "task_videos": [
-              3
+              1,
+              3,
+              5
             ]
           },
           {
@@ -2332,33 +3235,46 @@
             "onet_task_number": 7,
             "onet_task": "Remove excess mortar with trowels and hand tools, and finish mortar joints with jointing tools, for a sealed, uniform appearance.",
             "task_videos": [
+              3,
               5
             ]
           },
           {
             "onet_task_number": 8,
             "onet_task": "Fasten or fuse brick or other building material to structure with wire clamps, anchor holes, torch, or cement.",
-            "task_videos": []
+            "task_videos": [
+              2
+            ]
           },
           {
             "onet_task_number": 9,
             "onet_task": "Clean working surface to remove scale, dust, soot, or chips of brick and mortar, using broom, wire brush, or scraper.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 11,
             "onet_task": "Mix specified amounts of sand, clay, dirt, or mortar powder with water to form refractory mixtures.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 12,
             "onet_task": "Remove burned or damaged brick or mortar, using sledgehammer, crowbar, chipping gun, or chisel.",
-            "task_videos": []
+            "task_videos": [
+              5
+            ]
           },
           {
             "onet_task_number": 13,
             "onet_task": "Lay and align bricks, blocks, or tiles to build or repair structures or high temperature equipment, such as cupola, kilns, ovens, or furnaces.",
-            "task_videos": []
+            "task_videos": [
+              1,
+              3,
+              5
+            ]
           },
           {
             "onet_task_number": 14,
@@ -2376,8 +3292,11 @@
             "id": 1,
             "video_name": "Using a plumb bob",
             "video_url": "https://youtu.be/ENWMveXL4dA",
+            "length": 395,
             "mapped_tasks": [
-              1
+              1,
+              3,
+              13
             ],
             "tools": [
               "plumb bob",
@@ -2387,7 +3306,7 @@
               {
                 "activity": "Untie the knots on a plumb bob",
                 "activity_short": "Untie knots",
-                "category": "Wrap around an object and tie",
+                "category": "Wrap around, tie or untie",
                 "variables": {},
                 "repeated": false,
                 "segment": "0:25 - 0:35"
@@ -2432,8 +3351,11 @@
             "id": 2,
             "video_name": "Setting up a story pole",
             "video_url": "https://youtu.be/79CBP81iU1w",
+            "length": 327,
             "mapped_tasks": [
-              2
+              1,
+              2,
+              8
             ],
             "tools": [
               "nail",
@@ -2513,8 +3435,11 @@
             "id": 3,
             "video_name": "Buttering brick with mortar",
             "video_url": "https://youtu.be/PNVmr1gkVl4",
+            "length": 277,
             "mapped_tasks": [
-              3
+              3,
+              7,
+              13
             ],
             "tools": [
               "trowel"
@@ -2594,6 +3519,7 @@
             "id": 4,
             "video_name": "Cutting a brick in half with a hammer and chisel",
             "video_url": "https://youtu.be/JkuKCsibVJ8",
+            "length": 130,
             "mapped_tasks": [
               5
             ],
@@ -2652,8 +3578,14 @@
             "id": 5,
             "video_name": "Repointing mortar joints",
             "video_url": "https://youtu.be/WRNhN4DECws",
+            "length": 226,
             "mapped_tasks": [
-              7
+              3,
+              7,
+              9,
+              11,
+              12,
+              13
             ],
             "tools": [
               "bolster",
@@ -2672,7 +3604,7 @@
               {
                 "activity": "Scrape broken and damaged mortar with a trowel",
                 "activity_short": "Scrape mortar with trowel",
-                "category": "Composite - Take off excess material with a tool",
+                "category": "Composite - Take off some material from a surface with a tool",
                 "variables": {
                   "material": "mortar",
                   "tool": "trowel",
@@ -2759,7 +3691,7 @@
               {
                 "activity": "Take off excess mortar with the edge of a flat pointing iron",
                 "activity_short": "Take off excess mortar",
-                "category": "Composite - Take off excess material with a tool",
+                "category": "Composite - Take off some material from a surface with a tool",
                 "variables": {
                   "material": "mortar",
                   "tool": "flat pointing iron",
@@ -2771,7 +3703,7 @@
               {
                 "activity": "Trim the joint with a flat iron to match the rest of the wall",
                 "activity_short": "Trim the joint",
-                "category": "Composite - Take off excess material with a tool",
+                "category": "Composite - Take off some material from a surface with a tool",
                 "variables": {
                   "material": "mortar",
                   "tool": "flat pointing iron",
@@ -2783,7 +3715,7 @@
               {
                 "activity": "Use a hose pipe to trim a joint into concave joint",
                 "activity_short": "Trim joint into concave joint",
-                "category": "Composite - Take off excess material with a tool",
+                "category": "Composite - Take off some material from a surface with a tool",
                 "variables": {
                   "material": "mortar",
                   "tool": "hose pipe",
@@ -2859,7 +3791,8 @@
             "onet_task_number": 5,
             "onet_task": "Cement or nail flashing strips of metal or shingle over joints to make them watertight.",
             "task_videos": [
-              3
+              3,
+              4
             ]
           },
           {
@@ -2873,13 +3806,17 @@
             "onet_task_number": 7,
             "onet_task": "Cut felt, shingles, or strips of flashing to fit angles formed by walls, vents, or intersecting roof surfaces.",
             "task_videos": [
+              3,
+              4,
               5
             ]
           },
           {
             "onet_task_number": 8,
             "onet_task": "Apply plastic coatings, membranes, fiberglass, or felt over sloped roofs before applying shingles.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 9,
@@ -2889,17 +3826,23 @@
           {
             "onet_task_number": 10,
             "onet_task": "Attach roofing paper to roofs in overlapping strips to form bases for other materials.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 11,
             "onet_task": "Cover roofs or exterior walls of structures with slate, asphalt, aluminum, wood, gravel, gypsum, or related materials, using brushes, knives, punches, hammers, or other tools.",
-            "task_videos": []
+            "task_videos": [
+              4
+            ]
           },
           {
             "onet_task_number": 12,
             "onet_task": "Waterproof or damp-proof walls, floors, roofs, foundations, or basements by painting or spraying surfaces with waterproof coatings or by attaching waterproofing membranes to surfaces.",
-            "task_videos": []
+            "task_videos": [
+              3
+            ]
           },
           {
             "onet_task_number": 13,
@@ -2982,6 +3925,7 @@
             "id": 1,
             "video_name": "Cleaning debris off roof",
             "video_url": "https://youtu.be/Kjooc5EEXy4",
+            "length": 243,
             "mapped_tasks": [
               2
             ],
@@ -3076,6 +4020,7 @@
             "id": 2,
             "video_name": "Safely using outdoor extension ladder for roof access",
             "video_url": "https://youtu.be/3eWlp9o5_fk",
+            "length": 194,
             "mapped_tasks": [
               3
             ],
@@ -3143,7 +4088,7 @@
               {
                 "activity": "Tie rope to secure ladder",
                 "activity_short": "Tie rope",
-                "category": "Wrap around an object and tie",
+                "category": "Wrap around, tie or untie",
                 "variables": {},
                 "repeated": false,
                 "segment": "1:53 - 2:01"
@@ -3154,8 +4099,11 @@
             "id": 3,
             "video_name": "Installing top wall flashing",
             "video_url": "https://youtu.be/cHzVnv2VXv4",
+            "length": 119,
             "mapped_tasks": [
-              5
+              5,
+              7,
+              12
             ],
             "tools": [
               "hacksaw",
@@ -3216,7 +4164,7 @@
                 "activity_short": "Mark fastening locations",
                 "category": "Composite - Mark an object with a marking tool",
                 "variables": {
-                  "surface_to_mark": "roof flashing",
+                  "object_to_mark": "roof flashing",
                   "marking_tool": "pencil"
                 },
                 "repeated": true,
@@ -3227,8 +4175,7 @@
                 "activity_short": "Pre-drill holes in roof flashing",
                 "category": "Composite - Drill hole",
                 "variables": {
-                  "object_to_drill": "roof flashing",
-                  "power_drill": "power drill"
+                  "object_to_drill": "roof flashing"
                 },
                 "repeated": true,
                 "segment": "1:07 - 1:11"
@@ -3257,7 +4204,7 @@
               {
                 "activity": "Use silicone sealant to seal the joint between roof flashing and wall",
                 "activity_short": "Seal joint with silicone sealant",
-                "category": "Composite - Apply caulk or sealant from a gun or tube",
+                "category": "Composite - Apply paste from a gun or tube along a line",
                 "variables": {
                   "paste_to_apply": "silicone sealant",
                   "application_tool": "sealant tube",
@@ -3280,8 +4227,14 @@
             "id": 4,
             "video_name": "Installing roof shingles",
             "video_url": "https://youtu.be/3bQPEEtWGKU",
+            "length": 396,
             "mapped_tasks": [
-              6
+              5,
+              6,
+              7,
+              8,
+              10,
+              11
             ],
             "tools": [
               "chalk line",
@@ -3435,6 +4388,7 @@
             "id": 5,
             "video_name": "Cutting asphalt roof shingles",
             "video_url": "https://youtu.be/OSA8bwPrb98",
+            "length": 528,
             "mapped_tasks": [
               7
             ],

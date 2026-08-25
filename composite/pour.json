@@ -1,0 +1,33 @@
+{
+    "skills": [
+        {
+            "name": "Composite - Drop liquid from a container onto a surface or object",
+            "description": "Drop liquid from a container onto a surface or object",
+            "variables": [
+                "liquid_to_drop",
+                "container",
+                "drop_target"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the location on the drop_target to drop the liquid_to_drop from the container",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Align the container opening with the determined location on the drop_target",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the container to release a few drops of the liquid_to_drop through the container opening on the drop_target",
+                    "category": "Press an object with fingers",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Lubricate a nail gun by putting a few drops of lubricant through the nail gun head opening"
+            ]
+        }
+    ]
+}

@@ -24,6 +24,29 @@
             ]
         },
         {
+            "name": "Composite - Measure trueness with a level",
+            "description": "Use a level to check whether a surface is level, plumb, or otherwise aligned.",
+            "variables": [
+                "level",
+                "surface_to_check"
+            ],
+            "steps": [
+                {
+                    "activity": "Position the level on the surface_to_check",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Check the bubble in the level to determine if the surface_to_check is level",
+                    "category": "Take measurements",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Check if the top of a cabinet is horizontal with a spirit level"
+            ]
+        },
+        {
             "name": "Composite - Mark an object with a marking tool",
             "description": "Use a marking tool to mark a specific location on a piece of material",
             "variables": [
@@ -46,11 +69,14 @@
                     "category": "Mark on a surface",
                     "repeated": false
                 }
+            ],
+            "examples": [
+                "Mark a cutting line on lumber with a pencil"
             ]
         },
         {
             "name": "Composite - Measure and mark something",
-            "description": "Use a measuring tool to mark a specific length of a piece of material",
+            "description": "Use a measuring tool to mark a line or point on a piece of material",
             "variables": [
                 "object_to_mark",
                 "measuring_tool",

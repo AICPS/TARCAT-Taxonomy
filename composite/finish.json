@@ -1,7 +1,7 @@
 {
     "skills": [
         {
-            "name": "Composite - Take off excess material with a tool",
+            "name": "Composite - Take off some material from a surface with a tool",
             "description": "Use a tool to take off excess material from a surface.",
             "variables": [
                 "material",

@@ -29,6 +29,63 @@
                 "Use an outlet tester to confirm that a receptacle is powered",
                 "Use a magnetic stud finder to locate a ceiling stud"
             ]
+        },
+        {
+            "name": "Composite - Test a painted surface for lead",
+            "description": "Expose all coating layers, activate and apply a chemical test swab, and inspect both the sample and a verification control to determine whether lead is present.",
+            "variables": [
+                "painted_surface",
+                "scoring_tool"
+            ],
+            "steps": [
+                {
+                    "activity": "Cut through the coating layers on the painted_surface with the scoring_tool to expose a representative test area",
+                    "category": "Composite - Cut an object on a particular location",
+                    "variables": {
+                        "object_to_cut": "painted_surface",
+                        "cutting_tool": "scoring_tool"
+                    },
+                    "repeated": true
+                },
+                {
+                    "activity": "Press or crush the reagent chambers in the test swab to activate them",
+                    "category": "Press an object with fingers",
+                    "repeated": false
+                },
+                {
+                    "activity": "Shake the test swab to mix its reagents",
+                    "category": "Shake an object",
+                    "repeated": true
+                },
+                {
+                    "activity": "Rub the test swab against the exposed coating layer on the painted_surface",
+                    "category": "Stroke tool on surface",
+                    "repeated": true
+                },
+                {
+                    "activity": "Inspect the test swab and painted_surface for the specified color response",
+                    "category": "Composite - Probe for a signal",
+                    "variables": {
+                        "probe": "test swab",
+                        "signal_source": "painted_surface",
+                        "observed_signal": "red or pink color change"
+                    },
+                    "repeated": true
+                },
+                {
+                    "activity": "Press the test swab to the verification card to dispense the reagent",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Inspect the verification card for its control response",
+                    "category": "Inspect to check state or find issues",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Use a swab to test layered paint on an older door casing for lead before sanding or scraping"
+            ]
         }
     ]
 }

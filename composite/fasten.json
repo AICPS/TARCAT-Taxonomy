@@ -167,6 +167,177 @@
             "examples": [
                 "Loosen a wire from a circuit breaker terminal with a screwdriver"
             ]
+        },
+        {
+            "name": "Composite - Attach a tape to a surface",
+            "description": "Position and secure an adhesive tape over a surface.",
+            "variables": [
+                "surface",
+                "tape"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the extent of the surface where the tape will be applied",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the beginning of the tape at one side of the determined extent of the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the tape across the surface",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Press the tape on the surface to secure it",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Attach a tape along a horizontal line on a wall before painting"
+            ]
+        },
+        {
+            "name": "Composite - Tape an object to a surface",
+            "description": "Position and fix an object to a surface with a tape.",
+            "variables": [
+                "object_to_fasten",
+                "surface",
+                "tape"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the fixing position on the surface",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the object_to_fasten tape at the fixing position on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Attach the tape to the object_to_fasten",
+                    "category": "Composite - Attach a tape to a surface",
+                    "variables": {
+                        "surface": "object_to_fasten",
+                        "tape": "tape"
+                    },
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the tape to extend it across the surface",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Press the tape on the surface to secure it",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Use a tape to fasten an stencil to a wall before painting"
+            ]
+        },
+        {
+            "name": "Composite - Attach an object with adhesive to a surface",
+            "description": "Position and secure an object with adhesive over a surface.",
+            "variables": [
+                "surface",
+                "object_to_attach"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the extent of the surface where the object_to_attach will be attached",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the object_to_attach at the determined location on the surface",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the object_to_attach on the surface to secure it",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Attach a wall panel with adhesive on it to a wall"
+            ]
+        },
+        {
+            "name": "Composite - Attach masking material with tape dispenser",
+            "description": "Use a tape dispenser to position and secure a masking material and  tape over a surface or component.",
+            "variables": [
+                "surface_to_protect",
+                "masking_tape",
+                "masking_material"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the extent of the surface_to_protect",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position the tape dispenser on one side of the surface_to_protect",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the masking_tape along the masking_material edges",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Unroll the tape dispenser across the surface_to_protect",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Pull the tape dispenser to cut the film and tape with the blade",
+                    "category": "Pull or push an object with arm",
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Attach masking film to a window edge with tape dispenser"
+            ]
+        },
+        {
+            "name": "Composite - Remove a taped object from a surface",
+            "description": "Remove an object that has been taped to a surface.",
+            "variables": [
+                "object_to_remove",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Peel tape from the object_to_remove and/or surface",
+                    "category": "Pull or push an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Grab the object_to_remove",
+                    "category": "Grab an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull the object_to_remove away from the surface to remove it",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Remove a taped stencil from a wall after painting"
+            ]
         }
     ]
 }

@@ -74,12 +74,12 @@
                 {
                     "activity": "Measure with measuring_tool and mark the cut location on the  object_to_cut",
                     "category": "Composite - Measure and mark something",
-                    "repeated": false,
                     "variables": {
                         "object_to_mark": "object_to_cut",
                         "measuring_tool": "measuring_tool",
                         "marking_tool": "marking_tool"
-                    }
+                    },
+                    "repeated": false
                 },
                 {
                     "activity": "Cut the object_to_cut with the cutting_tool along the mark",

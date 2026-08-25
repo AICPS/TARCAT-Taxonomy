@@ -184,7 +184,7 @@
                 "primitives": [
                     "Shake an object",
                     "Stir liquid and solid mixture",
-                    "Wrap around an object and tie"
+                    "Wrap around, tie or untie"
                 ]
             },
             {
@@ -356,7 +356,7 @@
                 ]
             },
             {
-                "name": "Wrap around an object and tie",
+                "name": "Wrap around, tie or untie",
                 "description": "Wrap a string, rope, or cord around an object and tie it in a knot",
                 "examples": [
                     "Wrap a rope around a post and tie it in a knot",

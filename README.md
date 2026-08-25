@@ -1,8 +1,8 @@
 # Construction Task Activities Taxonomy
 
-This directory contains the video annotations of TARCAT (Taxonomy of Construction Task Activities for Robot Workers). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations.  
+This directory contains the resources for TAxonomy of Robotic workflow in Construction tasks AcTivities (TARCAT). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations.  
 
-`primitives.json` contains the taxonomy of primitive actions. `composite/` directory contains composite actions (termed as skills).
+`primitives.json` contains the taxonomy of primitive actions. `composite/` directory contains composite actions, also termed as skills.
 
 ## Labeling Videos
 
@@ -38,6 +38,7 @@ There are 3 broad `classes` of the primitive acions. Each has this format in the
   } 
 }
 ```
+
 
 ### Skills
 
@@ -134,6 +135,7 @@ video, they do not contain `variables`, `repeated`, or `segment` properties.
       "id": 1,
       "video_name": "NAME",
       "video_url": "URL",
+      "length": 100,
       "mapped_tasks": [1, 2],
       "tools": ["TOOL_1", "TOOL_2"],
       "activities": [
@@ -156,6 +158,7 @@ video, they do not contain `variables`, `repeated`, or `segment` properties.
 
 Notes
 
+- **length**: Video length in seconds.
 - **activity**: If the `activity` is labeled as a primitive action, then the "variables" property is `{}`.
 - **variables**: The `variables` property denotes an item used in the activity. With this `variables` property, all `variables` listed in a skill is mapped to the actual item used in the activity.
 - **repeated**: If the activity is performed only once before transitioning to other acitivities, then the `repeated` property is marked as `false`. If the activity is executed repeatedly for this task, by itself or as part of a group of activities, then this property is marked as `true`. If the activity is a skill, then repetation of the whole skill is considered.

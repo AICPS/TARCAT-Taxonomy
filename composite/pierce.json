@@ -4,22 +4,21 @@
             "name": "Composite - Drill hole",
             "description": "Drill a hole in an object using a power drill and drill bit.",
             "variables": [
-                "object_to_drill",
-                "power_drill"
+                "object_to_drill"
             ],
             "steps": [
                 {
-                    "activity": "Position the power_drill at the drilling location on the object_to_drill",
+                    "activity": "Position the power drill at the drilling location on the object_to_drill",
                     "category": "Position an object",
                     "repeated": false
                 },
                 {
-                    "activity": "Pull the trigger of the power_drill",
+                    "activity": "Pull the trigger of the power drill",
                     "category": "Press an object with fingers",
                     "repeated": true
                 },
                 {
-                    "activity": "Push the drill bit of the power_drill into the object_to_drill",
+                    "activity": "Push the drill bit of the power drill into the object_to_drill",
                     "category": "Pull or push an object with arm",
                     "repeated": true
                 }

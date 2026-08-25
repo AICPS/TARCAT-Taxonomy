@@ -70,8 +70,37 @@
             ]
         },
         {
-            "name": "Composite - Apply caulk or sealant from a gun or tube",
-            "description": "Apply caulk or sealant from a gun or tube to a surface or joint.",
+            "name": "Composite - Dip a brush or roller into a liquid and apply it to a surface",
+            "description": "Dip a brush or roller into a liquid and use it to apply the liquid to a surface.",
+            "variables": [
+                "liquid_to_apply",
+                "application_tool",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Dip the application_tool into the liquid_to_apply",
+                    "category": "Move tool along a linear path",
+                    "repeated": false
+                },
+                {
+                    "activity": "Apply the liquid to the surface with the application_tool",
+                    "category": "Composite - Apply a liquid to a surface with a brush or roller",
+                    "variables": {
+                        "liquid_to_apply": "liquid_to_apply",
+                        "application_tool": "application_tool",
+                        "surface": "surface"
+                    },
+                    "repeated": false
+                }
+            ],
+            "examples": [
+                "Dip a paintbrush into paint and apply it to a wall"
+            ]
+        },
+        {
+            "name": "Composite - Apply paste from a gun or tube",
+            "description": "Apply a paste from a gun or tube to a surface or joint.",
             "variables": [
                 "paste_to_apply",
                 "application_tool",
@@ -84,9 +113,33 @@
                     "repeated": false
                 },
                 {
-                    "activity": "Press the plunger of the application_tool to dispense the paste_to_apply",
+                    "activity": "Press the plunger of the gun or press the tube to dispense the paste_to_apply",
                     "category": "Press an object with fingers",
                     "repeated": true
+                }
+            ],
+            "examples": [
+                "Apply construction adhesive to a wall panel with a glue gun"
+            ]
+        },
+        {
+            "name": "Composite - Apply paste from a gun or tube along a line",
+            "description": "Apply pasten from a gun or tube to a surface or joint.",
+            "variables": [
+                "paste_to_apply",
+                "application_tool",
+                "surface"
+            ],
+            "steps": [
+                {
+                    "activity": "Apply the paste_to_apply to the surface with the application_tool",
+                    "category": "Composite - Apply paste from a gun or tube",
+                    "variables": {
+                        "paste_to_apply": "paste_to_apply",
+                        "application_tool": "application_tool",
+                        "surface": "surface"
+                    },
+                    "repeated": false
                 },
                 {
                     "activity": "Move the application_tool along the surface to apply the paste_to_apply",
@@ -97,6 +150,89 @@
             "examples": [
                 "Apply caulk to a joint between two surfaces with a caulking gun",
                 "Apply sealant to a surface with a tube of sealant"
+            ]
+        },
+        {
+            "name": "Composite - Mask a surface for painting",
+            "description": "Position and secure masking material over a surface or component and seal the edges to protect the covered area during painting.",
+            "variables": [
+                "surface_to_protect",
+                "masking_material",
+                "masking_tape"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the extent of the surface_to_protect",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position an edge of the masking_material",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull, unfold, or spread the masking_material across the surface_to_protect",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Position the masking_tape along the edges of the masking_material",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Press the masking_tape along the masking_material edges",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Inspect the covered area and sealed edges for gaps",
+                    "category": "Inspect to check state or find issues",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Cover a window with masking film and painter's tape before spraying",
+                "Protect an open electrical box and conductors from paint overspray"
+            ]
+        },
+        {
+            "name": "Composite - Mask a surface with an adhesive masking material",
+            "description": "Position and secure an adhesive masking material over a surface or component to protect the covered area during painting.",
+            "variables": [
+                "surface_to_protect",
+                "masking_material"
+            ],
+            "steps": [
+                {
+                    "activity": "Determine the extent of the surface_to_protect",
+                    "category": "Determine tool-application location",
+                    "repeated": false
+                },
+                {
+                    "activity": "Position an edge of the masking_material",
+                    "category": "Position an object",
+                    "repeated": false
+                },
+                {
+                    "activity": "Pull, unfold, or spread the masking_material across the surface_to_protect",
+                    "category": "Pull or push an object with arm",
+                    "repeated": true
+                },
+                {
+                    "activity": "Press the masking_material on the surface_to_protect to secure it",
+                    "category": "Press an object with fingers",
+                    "repeated": true
+                },
+                {
+                    "activity": "Inspect the covered area and sealed edges for gaps",
+                    "category": "Inspect to check state or find issues",
+                    "repeated": true
+                }
+            ],
+            "examples": [
+                "Cover painted stripper with laminated stripping paper to accelerate curing"
             ]
         }
     ]
