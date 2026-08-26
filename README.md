@@ -1,8 +1,14 @@
 # Construction Task Activities Taxonomy
 
-This directory contains the action primitives, skills and video annotations for TARCAT (Taxonomy of Construction Task Activities for Robot Workers). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations.  
+[TARCAT Paper](./TARCAT.pdf)
+
+This directory contains the action primitives, skills and video annotations for TARCAT (Taxonomy of Construction Task Activities for Robot Workers). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations. Please check the [paper](./TARCAT.pdf) for details.
 
 `primitives.json` contains the taxonomy of primitive actions. `composite/` directory contains composite actions, also termed as skills.
+
+## Release
+
+- **Aug 25, 2026:** We are releasing **TARCAT v1.0** taxonomy. The taxonomy is derived from 30 instructional construction task videos and 91 O*NET tasks across seven major construction occupations in the U.S.
 
 ## Labeling Videos
 
@@ -171,5 +177,19 @@ Notes
 ```json
 {
   "tools": ["TOOL_1", "TOOL_2"]
+}
+```
+
+## Citation
+
+If you find this work useful, please cite this work as-
+
+```latex
+@misc{tarcatTaxonomy2026,
+  author={Sakib, Sadman and Peng, Zhangyi None and Pang, Yujie and Otsuki, Yu and Al Faruque, Mohammad Abdullah},
+  title={TARCAT-Taxonomy: Taxonomy of Construction Task Activities for Robot Workers},
+  howpublished={GitHub repository},
+  year={2026},
+  url={https://github.com/AICPS/TARCAT-Taxonomy}
 }
 ```
