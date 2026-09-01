@@ -1,29 +1,24 @@
 {
-    "information_processing": {
-        "name": "Information Processing",
-        "description": "The process of gathering, processing, and using information to make decisions",
-        "groups": [
+    "intellectual_tasks": {
+        "name": "Intellectual tasks",
+        "description": "Activities that acquire, interpret, document, or analyze task-relevant information and formulate decisions or plans",
+        "sub_categories": [
             {
-                "name": "Assessment",
-                "description": "The process of evaluating information to make decisions",
+                "name": "Information Processing",
+                "description": "Acquire, interpret, measure, or document task-relevant information",
                 "primitives": [
                     "Take measurements",
-                    "Determine tool-application location",
-                    "Inspect to check state or find issues"
-                ]
-            },
-            {
-                "name": "Comprehension",
-                "description": "The process of understanding and interpreting information",
-                "primitives": [
                     "Study plan, instruction or specifications",
-                    "Listen to or observe instructions or signals"
+                    "Listen to or observe instructions or signals",
+                    "Prepare records, documents, and reports"
                 ]
             },
             {
-                "name": "Planning",
-                "description": "The process of planning, calculating, selecting, and estimating the resources needed to complete a task",
+                "name": "Problem Solving",
+                "description": "Analyze conditions and requirements to identify application locations or issues, estimate resources, select tools and materials, or formulate designs and plans",
                 "primitives": [
+                    "Determine tool-application location",
+                    "Inspect to check state or find issues",
                     "Estimate time, materials, labor and cost",
                     "Select and procure tools and materials",
                     "Prepare design, layout or installation plans"
@@ -67,6 +62,13 @@
                 "examples": []
             },
             {
+                "name": "Prepare records, documents, and reports",
+                "description": "Maintain records, files, and document actions, and progress reports",
+                "examples": [
+                    "Write a report on a project"
+                ]
+            },
+            {
                 "name": "Estimate time, materials, labor and cost",
                 "description": "Estimate the amount of time, materials, labor and cost needed to complete a task",
                 "examples": [
@@ -91,23 +93,18 @@
             }
         ]
     },
-    "communication": {
-        "name": "Communication",
-        "description": "The exchange of information between individuals or groups",
-        "groups": [
+    "social_tasks": {
+        "name": "Social tasks",
+        "description": "Activities that exchange information and coordinate work with other people",
+        "sub_categories": [
             {
-                "name": "Collaboration",
-                "description": "Collaborate and coordinate with other workers through speech and gestures",
+                "name": "Coordinating",
+                "description": "Convey information through speech or gestures and schedule or coordinate work with others",
                 "primitives": [
                     "Talk to convey information",
                     "Use gestures to signal other workers",
                     "Schedule and coordinate work with others"
                 ]
-            },
-            {
-                "name": "Documentation",
-                "description": "The use of written words to convey information",
-                "primitives": ["Prepare records, documents, and reports"]
             }
         ],
         "primitives": [
@@ -131,20 +128,13 @@
                 "examples": [
                     "Coordinate with a fellow worker to lift a heavy object"
                 ]
-            },
-            {
-                "name": "Prepare records, documents, and reports",
-                "description": "Maintain records, files, and document actions, and progress reports",
-                "examples": [
-                    "Write a report on a project"
-                ]
             }
         ]
     },
-    "tool_use": {
-        "name": "Tool Use",
-        "description": "The application of tools to complete tasks",
-        "groups": [
+    "physical_tasks": {
+        "name": "Physical tasks",
+        "description": "Embodied activities that manipulate tools or objects or exert physical effort on the work environment",
+        "sub_categories": [
             {
                 "name": "Finger manipulation",
                 "description": "Manipulate controls, tools, or objects primarily through finger motion or force, with little gross arm movement",
@@ -199,7 +189,7 @@
             },
             
             {
-                "name": "Whole-body locomotion and transport",
+                "name": "Whole-body locomotion",
                 "description": "Use the legs and torso to move between locations, climb, or transport an object",
                 "primitives": [
                     "Walk to a location",

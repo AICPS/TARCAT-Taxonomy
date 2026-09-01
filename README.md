@@ -1,13 +1,12 @@
 # Construction Task Activities Taxonomy
 
-[TARCAT Paper](./TARCAT.pdf)
-
-This directory contains the action primitives, skills and video annotations for TARCAT (Taxonomy of Construction Task Activities for Robot Workers). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations. Please check the [paper](./TARCAT.pdf) for details.
+This directory contains the action primitives, skills and video annotations for TARCAT (Taxonomy of Construction Task Activities for Robot Workers). The taxonomy is derived based on instructional Youtube videos of construction tasks across different occupations.
 
 `primitives.json` contains the taxonomy of primitive actions. `composite/` directory contains composite actions, also termed as skills.
 
 ## Release
 
+- **Sep 1, 2026:** Updated the category names in TARCAT to adopt an existing task taxonomy.
 - **Aug 25, 2026:** We are releasing **TARCAT v1.0** taxonomy. The taxonomy is derived from 30 instructional construction task videos and 91 O*NET tasks across seven major construction occupations in the U.S.
 
 ## Labeling Videos
@@ -20,17 +19,17 @@ The TARCAT taxonomy also aims to understand all key activities to perform a cons
 
 ### Primitive Actions
 
-There are 3 broad `classes` of the primitive acions. Each has this format in the `primitives.json` file
+There are three broad `categories` of primitive actions: `intellectual_tasks`, `social_tasks`, and `physical_tasks`. Each category has the following format in `primitives.json`:
 
 ```json
 {
-  "key": {
+  "category_key": {
     "name": "NAME",
     "description": "DESCRIPTION",
-    "groups": [
+    "sub_categories": [
       {
-        "name": "GROUP_NAME",
-        "description": "GROUP_DESCRIPTION",
+        "name": "SUB_CATEGORY_NAME",
+        "description": "SUB_CATEGORY_DESCRIPTION",
         "primitives": ["PRIMITIVE_NAME"]
       }
     ],
@@ -106,7 +105,7 @@ Activity labels for the YouTube videos are in `activity_labels.json`. The file i
 }
 ```
 
-**Non-movement Tasks:** If a `task` in an occupation does not require movement, its distinct activities are identified directly from the task statement and each activity is labeled with a primitive action from the `information_processing` or `communication` class. These tasks do not have corresponding task videos. Most contain one activity, but a task that spans multiple primitive actions contains multiple entries in the `activities` list. It has the following format
+**Non-movement Tasks:** If a `task` in an occupation does not require movement, its distinct activities are identified directly from the task statement and each activity is labeled with a primitive action from the `intellectual_tasks` or `social_tasks` category. These tasks do not have corresponding task videos. Most contain one activity, but a task that spans multiple primitive actions contains multiple entries in the `activities` list. It has the following format
 
 ```json
 {

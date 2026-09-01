@@ -146,20 +146,19 @@
             ]
         },
         {
-            "name": "Composite - Loosen an electrical wire from a terminal with a screwdriver",
+            "name": "Composite - Disconnect wire by loosening terminal screw with a screwdriver",
             "description": "Rotate a screwdriver to loosen a terminal screw and remove the wire from the terminal.",
             "variables": [
-                "wire_to_loosen",
                 "terminal"
             ],
             "steps": [
                 {
-                    "activity": "Rotate the screwdriver to loosen the terminal screw holding the wire_to_loosen in the terminal",
+                    "activity": "Rotate the screwdriver to loosen the terminal screw holding the wire in the terminal",
                     "category": "Twist an object using wrist rotation",
                     "repeated": true
                 },
                 {
-                    "activity": "Pull the wire_to_loosen out of the terminal",
+                    "activity": "Pull the wire out of the terminal",
                     "category": "Pull or push an object with arm",
                     "repeated": true
                 }

@@ -1774,9 +1774,8 @@
               {
                 "activity": "Loosen the circuit breaker terminal screw with a screwdriver and remove the wire",
                 "activity_short": "Disconnect wire from breaker",
-                "category": "Composite - Loosen an electrical wire from a terminal with a screwdriver",
+                "category": "Composite - Disconnect wire by loosening terminal screw with a screwdriver",
                 "variables": {
-                  "wire_to_loosen": "wire",
                   "terminal": "circuit breaker terminal"
                 },
                 "repeated": false,
